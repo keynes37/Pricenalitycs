@@ -3,7 +3,7 @@ title: "Análisis de precios"
 subtitle: "Maestría en Mercadeo"
 format:
   revealjs: 
-    theme: moon
+    theme: [moon, mio.scss]
 author:
   - name: Carlos Andrés Yanes
     email: cayanes@uninorte.edu.co
@@ -24,4 +24,14 @@ author:
 
 ## Notas
 
-Un cuadro que requiere de  [atención]{.fg style="--col: #FF0000"}
+
+Un cuadro que requiere de [atención]{.fg style="--col: #FF0000"} 🧐
+
+|Requerimientos |Fechas    | Ponderador   |
+|---------------|----------|--------------|
+| Participación | Semana 1 | 25%          |
+| Participación | Semana 2 | 25%          |
+| Participación | Semana 3 | 25%          |
+| Participación | Semana 4 | 25%          |
+
+

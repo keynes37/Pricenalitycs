@@ -1,0 +1,22 @@
+/*-- scss:defaults --*/
+
+// Custom colours and variables
+$nit: #131516;
+$cup: #107895;
+$cup2: #9a2515;
+$pink: #e64173;
+
+.alert {
+  color: $pink;
+}
+
+.fg {
+  color: var(--col, $nit);
+}
+
+.bg {
+  background-color: var(--col, #fff);
+  padding: 0.1em;
+  border-radius: 5px;
+  display: inline-block;
+}
