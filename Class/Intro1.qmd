@@ -24,14 +24,133 @@ author:
 
 ## Notas
 
-
 Un cuadro que requiere de [atención]{.fg style="--col: #FF0000"} 🧐
 
-|Requerimientos |Fechas    | Ponderador   |
-|---------------|----------|--------------|
-| Participación | Semana 1 | 25%          |
-| Participación | Semana 2 | 25%          |
-| Participación | Semana 3 | 25%          |
-| Participación | Semana 4 | 25%          |
+|Requerimientos       |Fechas        |Ponderador    |
+|---------------------|--------------|--------------|
+| Participación       | En clase     | 25%          |
+| Work en clases      | A solicitud  | 25%          |
+| Quizzes             | En clase     | 25%          |
+| Trabajo final       | Semana 4     | 25%          |
+
+♠ Las [notas]{.fg style="--col: #FF8000"} son individuales. Es muy raro, a no ser que los estudiantes decidan ser *irresponsables* el curso no cumpla con los compromisos académicos
+
+## Línea de trabajo
+
+- [Descriptivo]{.fg style="--col: #FF8000"}: Enfoque conceptual en la materia 
+- [Diagnostico]{.fg style="--col: #00FFFF"}: Enfoque de valoración
+- [Prescriptivo]{.fg style="--col: #FF8000"}: Mirar lo que hay que hacer 
+- [Predictivo]{.fg style="--col: #00FFFF"}: Lanzar una apreciación técnica
+
+El curso trata de ser [completo]{.under}, intentando que los estudiantes se lleven una idea mucho mas general y estratégica. 
+
+# Empecemos 🥹
+
+## Comprador(es)
+
+::: {.incremental}
++ Están dispuestos a [recibir]{.alert} un bien o servicio cuando realiza un pago (dinero, atención, tiempo)
++ ![comp](graphs/pic1.jpeg){width=30%}
+:::
+
+## Comprador(es)
+
+::: {.incremental}
++ Peter Drucker dice: *"... El propósito de los negocios es crear y mantener un comprador"*
++ Mediciones, gráfico/as, heurística, predicción y automatización ayudan al análisis de eventos.
++ La analítica tiene su historia, una apreciación de esto se dió para los años de 1880.
++ Es bueno mirar también el cine, películas como [*Moneyball*(2011)]{.fg style="--col: #0000FF"} popularizó entre [científicos de datos]{.alert} la mirada que brinda la estadística en cuanto a la estrategia de equipos.
+:::
+
+## Datos y análitica
+
+### Perspectiva de los datos e información
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![](graphs/pic2.png)
+:::
+
+::: {.column width="50%"}
+- [Descriptivo]{.fg style="--col: #FF8000"}: **Qué ocurre en el negocio?**
+
+- [Diagnostico]{.fg style="--col: #00FFFF"}: **Por qué está sucediendo?**
+
+- [Predictivo]{.fg style="--col: #FF8000"}: **Qué podría ocurrir?**
+
+- [Prescriptivo]{.fg style="--col: #00FFFF"}: **Qué necesito hacer?**
+:::
+
+::::
+
+## Embudo de E-commerce
+
+![](graphs/pic3.png)
+
+## Lo que se cree que hace la analitica
+
+```{mermaid}
+%%| fig-width: 6.5
+flowchart LR
+  A(Información) --> B{IA}
+  B --> C(Salida)
+```
+
+- Pero lo que en realidad es
+
+```{mermaid}
+%%| fig-width: 5.2
+flowchart TD
+    A[Datos] -->|Ciencia de datos| B(Valor)
+    B --> C{Data engineering}
+    C -->|Grupo 1| D[Modelamiento]
+    C -->|Grupo 2| E[Operacionalización]
+    C -->|Grupo 3| F[Aspectos legales]
+```
+
+
+
+# Nucleo conceptual
+
+## Conceptos a adquirir
+
+### A nivel de consumidor
+
+:::{.incremental}
+- Núcleo de la necesidad: Un problema identificable que el [comprador]{.fg style="--col: #FF8000"} quiere resolver. Puede ser *funcional*, *emocional*, *social*, *interés propio*, etc.
+- Núcleo de beneficios: El comprador desea un [resultado]{.fg style="--col: #FF8000"} por el hecho de su compra. *P.e:* Los desplazamientos al trabajo no son necesariamente en carro/automóvil.
+- Consumidor: Ente que experimenta el núcleo de la necesidad.
+- Comprador: Ente que compra y desde luego paga.
+
+:::
+
+## Conceptos a adquirir
+
+### A nivel de producto
+
+:::{.incremental}
+- Producto/servicio/experiencia: Un bien que proporciona [satisfacción]{.fg style="--col: #FFC0CB"}
+- Características: Aspectos de un producto que proveen una serie de beneficios **tangibles** o **intangibles**.
+- Contribución marginal: Precio -- Costo Marginal.
+- Competidor: Cualquier elemento que desvié la atención a la necesidad del principal. *P.e:* Viajar en bicicleta, caminar, Indriver, tabla, trabajar desde casa.
+:::
+
+## Conceptos a adquirir
+
+### A nivel de mercado
+
+:::{.incremental}
+- Mercado: un grupo potencial de [compradores]{.fg style="--col: #FF8000"} con la misma necesidad de nucleo.
+- Segmento: Un subgrupo [distintivo]{.fg style="--col: #FF8000"} de compradores similares
+- Target: Segmento al cual la firma desea atender o vender
+- Posicionamiento: Especificaciones del producto para [satisfacer]{.fg style="--col: #FFC0CB"} un grupo de segmentos
+- Marketing: Practica que busca satisfacer necesidades de los clientes de forma rentable.
+
+:::
+
+
+
+
 
 

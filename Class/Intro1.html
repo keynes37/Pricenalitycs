@@ -319,6 +319,9 @@
       margin-right: 0; 
     }
   </style>
+  <script src="Intro1_files/libs/quarto-diagram/mermaid.min.js"></script>
+  <script src="Intro1_files/libs/quarto-diagram/mermaid-init.js"></script>
+  <link href="Intro1_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-dark">
   <div class="reveal">
@@ -369,30 +372,166 @@ Carlos Andrés Yanes
 <tbody>
 <tr class="odd">
 <td>Participación</td>
-<td>Semana 1</td>
+<td>En clase</td>
 <td>25%</td>
 </tr>
 <tr class="even">
-<td>Participación</td>
-<td>Semana 2</td>
+<td>Work en clases</td>
+<td>A solicitud</td>
 <td>25%</td>
 </tr>
 <tr class="odd">
-<td>Participación</td>
-<td>Semana 3</td>
+<td>Quizzes</td>
+<td>En clase</td>
 <td>25%</td>
 </tr>
 <tr class="even">
-<td>Participación</td>
+<td>Trabajo final</td>
 <td>Semana 4</td>
 <td>25%</td>
 </tr>
 </tbody>
 </table>
+<p>♠ Las <span class="fg" style="--col: #FF8000">notas</span> son individuales. Es muy raro, a no ser que los estudiantes decidan ser <em>irresponsables</em> el curso no cumpla con los compromisos académicos</p>
+</section>
+<section id="línea-de-trabajo" class="slide level2">
+<h2>Línea de trabajo</h2>
+<ul>
+<li><span class="fg" style="--col: #FF8000">Descriptivo</span>: Enfoque conceptual en la materia</li>
+<li><span class="fg" style="--col: #00FFFF">Diagnostico</span>: Enfoque de valoración</li>
+<li><span class="fg" style="--col: #FF8000">Prescriptivo</span>: Mirar lo que hay que hacer</li>
+<li><span class="fg" style="--col: #00FFFF">Predictivo</span>: Lanzar una apreciación técnica</li>
+</ul>
+<p>El curso trata de ser <span class="under">completo</span>, intentando que los estudiantes se lleven una idea mucho mas general y estratégica.</p>
+</section>
+<section>
+<section id="empecemos" class="title-slide slide level1 center">
+<h1>Empecemos 🥹</h1>
+
+</section>
+<section id="compradores" class="slide level2">
+<h2>Comprador(es)</h2>
+<div>
+<ul>
+<li class="fragment">Están dispuestos a <span class="alert">recibir</span> un bien o servicio cuando realiza un pago (dinero, atención, tiempo)</li>
+<li class="fragment"><div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="graphs/pic1.jpeg" style="width:30.0%"></p>
+<figcaption>comp</figcaption>
+</figure>
+</div></li>
+</ul>
+</div>
+</section>
+<section id="compradores-1" class="slide level2">
+<h2>Comprador(es)</h2>
+<div>
+<ul>
+<li class="fragment">Peter Drucker dice: <em>“… El propósito de los negocios es crear y mantener un comprador”</em></li>
+<li class="fragment">Mediciones, gráfico/as, heurística, predicción y automatización ayudan al análisis de eventos.</li>
+<li class="fragment">La analítica tiene su historia, una apreciación de esto se dió para los años de 1880.</li>
+<li class="fragment">Es bueno mirar también el cine, películas como <span class="fg" style="--col: #0000FF"><em>Moneyball</em>(2011)</span> popularizó entre <span class="alert">científicos de datos</span> la mirada que brinda la estadística en cuanto a la estrategia de equipos.</li>
+</ul>
+</div>
+</section>
+<section id="datos-y-análitica" class="slide level2">
+<h2>Datos y análitica</h2>
+<h3 id="perspectiva-de-los-datos-e-información">Perspectiva de los datos e información</h3>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="graphs/pic2.png"></p>
+</div><div class="column" style="width:50%;">
+<ul>
+<li><p><span class="fg" style="--col: #FF8000">Descriptivo</span>: <strong>Qué ocurre en el negocio?</strong></p></li>
+<li><p><span class="fg" style="--col: #00FFFF">Diagnostico</span>: <strong>Por qué está sucediendo?</strong></p></li>
+<li><p><span class="fg" style="--col: #FF8000">Predictivo</span>: <strong>Qué podría ocurrir?</strong></p></li>
+<li><p><span class="fg" style="--col: #00FFFF">Prescriptivo</span>: <strong>Qué necesito hacer?</strong></p></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="embudo-de-e-commerce" class="slide level2">
+<h2>Embudo de E-commerce</h2>
+
+<img data-src="graphs/pic3.png" class="r-stretch"></section>
+<section id="lo-que-se-cree-que-hace-la-analitica" class="slide level2">
+<h2>Lo que se cree que hace la analitica</h2>
+<div class="cell" data-reveal="true" data-fig-width="6.5">
+<div class="cell-output-display">
+<div>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+  A(Información) --&gt; B{IA}
+  B --&gt; C(Salida)
+</pre>
+</div>
+</div>
+</div>
+</div>
+<ul>
+<li>Pero lo que en realidad es</li>
+</ul>
+<div class="cell" data-reveal="true" data-fig-width="5.2">
+<div class="cell-output-display">
+<div>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+    A[Datos] --&gt;|Ciencia de datos| B(Valor)
+    B --&gt; C{Data engineering}
+    C --&gt;|Grupo 1| D[Modelamiento]
+    C --&gt;|Grupo 2| E[Operacionalización]
+    C --&gt;|Grupo 3| F[Aspectos legales]
+</pre>
+</div>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="nucleo-conceptual" class="title-slide slide level1 center">
+<h1>Nucleo conceptual</h1>
+
+</section>
+<section id="conceptos-a-adquirir" class="slide level2">
+<h2>Conceptos a adquirir</h2>
+<h3 id="a-nivel-de-consumidor">A nivel de consumidor</h3>
+<div>
+<ul>
+<li class="fragment">Núcleo de la necesidad: Un problema identificable que el <span class="fg" style="--col: #FF8000">comprador</span> quiere resolver. Puede ser <em>funcional</em>, <em>emocional</em>, <em>social</em>, <em>interés propio</em>, etc.</li>
+<li class="fragment">Núcleo de beneficios: El comprador desea un <span class="fg" style="--col: #FF8000">resultado</span> por el hecho de su compra. <em>P.e:</em> Los desplazamientos al trabajo no son necesariamente en carro/automóvil.</li>
+<li class="fragment">Consumidor: Ente que experimenta el núcleo de la necesidad.</li>
+<li class="fragment">Comprador: Ente que compra y desde luego paga.</li>
+</ul>
+</div>
+</section>
+<section id="conceptos-a-adquirir-1" class="slide level2">
+<h2>Conceptos a adquirir</h2>
+<h3 id="a-nivel-de-producto">A nivel de producto</h3>
+<div>
+<ul>
+<li class="fragment">Producto/servicio/experiencia: Un bien que proporciona <span class="fg" style="--col: #FFC0CB">satisfacción</span></li>
+<li class="fragment">Características: Aspectos de un producto que proveen una serie de beneficios <strong>tangibles</strong> o <strong>intangibles</strong>.</li>
+<li class="fragment">Contribución marginal: Precio – Costo Marginal.</li>
+<li class="fragment">Competidor: Cualquier elemento que desvié la atención a la necesidad del principal. <em>P.e:</em> Viajar en bicicleta, caminar, Indriver, tabla, trabajar desde casa.</li>
+</ul>
+</div>
+</section>
+<section id="conceptos-a-adquirir-2" class="slide level2">
+<h2>Conceptos a adquirir</h2>
+<h3 id="a-nivel-de-mercado">A nivel de mercado</h3>
+<div>
+<ul>
+<li class="fragment">Mercado: un grupo potencial de <span class="fg" style="--col: #FF8000">compradores</span> con la misma necesidad de nucleo.</li>
+<li class="fragment">Segmento: Un subgrupo <span class="fg" style="--col: #FF8000">distintivo</span> de compradores similares</li>
+<li class="fragment">Target: Segmento al cual la firma desea atender o vender</li>
+<li class="fragment">Posicionamiento: Especificaciones del producto para <span class="fg" style="--col: #FFC0CB">satisfacer</span> un grupo de segmentos</li>
+<li class="fragment">Marketing: Practica que busca satisfacer necesidades de los clientes de forma rentable.</li>
+</ul>
+</div>
 <div class="footer footer-default">
 
 </div>
-</section>
+</section></section>
     </div>
   </div>
 
