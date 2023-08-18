@@ -169,11 +169,12 @@ flowchart TD
 
 # Hagalo usted mismo/a :cowboy_hat_face:
 
-1. Plantee un diagrama de recopilación de datos
+1. Discuta con los compañero/as un target/segmento de mercado
 
-2. Mencione las fases para la transformarción
+2. Plantee un diagrama de recopilación de datos
 
-3. Discuta con los compañero/as un target/segmento de mercado
+3. Mencione las fases para la transformación de los datos
+
 
 
 
@@ -324,6 +325,18 @@ dataup |>
 
 # Regresemos a lo teórico :grimacing:
 
+## Formulas de métricas e importancia
+
+1. Media $\bar{x}=\sum x_i / n$
+
+2. Varianza $\sigma^2= \sum (x_i- \bar{x})^2$
+
+3. Otros momentos de distribución
+
+4. Curtosis $K=3$.
+
+5. Asimetría $(+)\; o\  (-)$
+
 ## Aspectos a tener en cuenta
 
 :::{.incremental}
@@ -471,3 +484,4 @@ print(x)
 print("hola marketer")
 ```
 
+# Gracias por su atención
