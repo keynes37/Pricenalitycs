@@ -4,4 +4,6 @@ Un curso para la Maestría en Mercadeo de la Universidad del Norte en la ciudad 
 
 ## Presentaciones
 
+1. Clase [Introducción](https://raw.githack.com/keynes37/Pricenalitycs/main/Class/Intro1.html)
+
 ### Asignaciones
