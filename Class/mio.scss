@@ -5,10 +5,16 @@ $nit: #131516;
 $cup: #107895;
 $cup2: #9a2515;
 $pink: #e64173;
+$blue: #4285F4;
 
 .alert {
   color: $pink;
 }
+
+.blur {
+  color: $blue;
+}
+
 
 .fg {
   color: var(--col, $nit);
@@ -27,4 +33,19 @@ $pink: #e64173;
 
 .line {
   text-decoration: line-through;
+}
+
+.small {
+  font-size: 21px; /* Tamaño de fuente más pequeño */
+  font-family: Helvetica, monospace; /* Fuente personalizada */
+}
+
+.pseudocode, .pseudocode-small {
+  font-family: monospace;
+  background: #f8f8f8;
+  border-radius: 3px;
+  padding: 10px;
+}
+.pseudocode-small {
+  font-size: 20px;
 }

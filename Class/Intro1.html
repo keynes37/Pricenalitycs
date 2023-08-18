@@ -7,7 +7,9 @@
 <link href="Intro1_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="Intro1_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="Intro1_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="Intro1_files/libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="Intro1_files/libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="Intro1_files/libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="Intro1_files/libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.3.353">
 
   <meta name="author" content="Carlos Andrés Yanes">
@@ -29,6 +31,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+      }
+    pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+    div.sourceCode
+      { color: #f8f8f2;  }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #f8f8f2; } /* Normal */
+    code span.al { color: #f07178; background-color: #2a0f15; font-weight: bold; } /* Alert */
+    code span.an { color: #d4d0ab; } /* Annotation */
+    code span.at { color: #00e0e0; } /* Attribute */
+    code span.bn { color: #d4d0ab; } /* BaseN */
+    code span.bu { color: #abe338; } /* BuiltIn */
+    code span.cf { color: #ffa07a; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #abe338; } /* Char */
+    code span.cn { color: #ffd700; } /* Constant */
+    code span.co { color: #f8f8f2; font-style: italic; } /* Comment */
+    code span.cv { color: #ffd700; } /* CommentVar */
+    code span.do { color: #f8f8f2; } /* Documentation */
+    code span.dt { color: #ffa07a; } /* DataType */
+    code span.dv { color: #d4d0ab; } /* DecVal */
+    code span.er { color: #f07178; text-decoration: underline; } /* Error */
+    code span.ex { color: #00e0e0; font-weight: bold; } /* Extension */
+    code span.fl { color: #d4d0ab; } /* Float */
+    code span.fu { color: #ffa07a; } /* Function */
+    code span.im { color: #abe338; } /* Import */
+    code span.in { color: #d4d0ab; } /* Information */
+    code span.kw { color: #ffa07a; font-weight: bold; } /* Keyword */
+    code span.op { color: #ffa07a; } /* Operator */
+    code span.ot { color: #00e0e0; } /* Other */
+    code span.pp { color: #dcc6e0; } /* Preprocessor */
+    code span.re { color: #00e0e0; background-color: #f8f8f2; } /* RegionMarker */
+    code span.sc { color: #abe338; } /* SpecialChar */
+    code span.ss { color: #abe338; } /* SpecialString */
+    code span.st { color: #abe338; } /* String */
+    code span.va { color: #00e0e0; } /* Variable */
+    code span.vs { color: #abe338; } /* VerbatimString */
+    code span.wa { color: #dcc6e0; } /* Warning */
   </style>
   <link rel="stylesheet" href="Intro1_files/libs/revealjs/dist/theme/quarto.css">
   <link href="Intro1_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -348,6 +415,25 @@ Carlos Andrés Yanes
 </section>
 <section id="presentación" class="slide level2">
 <h2>Presentación</h2>
+<h3 id="recursos-para-la-clase">Recursos para la clase</h3>
+<ul>
+<li><p><span class="alert">Course website:</span> <a href="https://carlosyanes.netlify.app">Carlos Yanes</a></p></li>
+<li><p><a href="https://carlosyanes.netlify.app/contenidoc/Syllabusanpre.pdf">Syllabus</a></p></li>
+<li><p>En Persona? Departamento Economía Oficina D-215</p></li>
+<li><p><span class="blur">Hoy:</span> Introducción a Analytics y Generalidades</p></li>
+<li><p>Lecturas:</p>
+<ul>
+<li><a href="https://carlosyanes.netlify.app/contenidoc/Lectmercadeo/Lecture01.pdf">Lect. 1: Analytics in Marketing</a></li>
+</ul></li>
+<li><p><span class="alert">Tareas:</span> De acuerdo al trabajo final por desarrollar</p></li>
+<li><p><span class="alert">Ayudas:</span> <a href="https://stackoverflow.com/">La biblia del programador</a></p></li>
+</ul>
+</section>
+<section id="section" class="slide level2" data-background-color="black" data-background-image="https://media.giphy.com/media/8FVcs24aSuQBpHPg4n/giphy.gif" data-background-size="1000px">
+<h2></h2>
+</section>
+<section id="presentación-1" class="slide level2">
+<h2>Presentación</h2>
 <div>
 <ul>
 <li class="fragment">Como vamos?</li>
@@ -525,8 +611,436 @@ Carlos Andrés Yanes
 <li class="fragment">Segmento: Un subgrupo <span class="fg" style="--col: #FF8000">distintivo</span> de compradores similares</li>
 <li class="fragment">Target: Segmento al cual la firma desea atender o vender</li>
 <li class="fragment">Posicionamiento: Especificaciones del producto para <span class="fg" style="--col: #FFC0CB">satisfacer</span> un grupo de segmentos</li>
-<li class="fragment">Marketing: Practica que busca satisfacer necesidades de los clientes de forma rentable.</li>
+<li class="fragment">Marketing: Practica que busca <span class="fg" style="--col: #FFC0CB">satisfacer</span> necesidades de los clientes de forma rentable.</li>
 </ul>
+</div>
+</section></section>
+<section id="hagalo-usted-mismoa" class="title-slide slide level1 center">
+<h1>Hagalo usted mismo/a <span class="emoji" data-emoji="cowboy_hat_face">🤠</span></h1>
+<ol type="1">
+<li><p>Plantee un diagrama de recopilación de datos</p></li>
+<li><p>Mencione las fases para la transformarción</p></li>
+<li><p>Discuta con los compañero/as un target/segmento de mercado</p></li>
+</ol>
+</section>
+
+<section>
+<section id="datos-de-compradores" class="title-slide slide level1 center">
+<h1>Datos de compradores</h1>
+
+</section>
+<section id="datos-de-compradores-1" class="slide level2">
+<h2>Datos de compradores</h2>
+<div>
+<ul>
+<li class="fragment"><p>Customer Analitycs que viene a ser?</p></li>
+<li class="fragment"><p>Mercadeo que es?</p></li>
+<li class="fragment"><p><span class="fg" style="--col: #FF8000">Datos de compradores</span> nos muestra como los compradores y consumidores aprenden, sienten, se comportan cuando <span class="bg" style="--col: #FFFF00">hacen uso</span> de bienes y servicios.</p></li>
+<li class="fragment"><p>Poseer datos incrementa de forma sustancial la administración del mercadeo y la implementación de estrategias de formas muy completas.</p></li>
+</ul>
+</div>
+</section>
+<section id="como-podemos-usar-los-datos-de-compradores" class="slide level2">
+<h2>Como podemos usar los datos de compradores?</h2>
+<div>
+<ul>
+<li class="fragment">En cuanto a la administración queremos adquirir, desarrollar, retener y bombardear a los compradores.</li>
+<li class="fragment">Marketing Mix: Nos permite mejorar la oferta de productos de la compañia, precios, promociones y distribución</li>
+<li class="fragment">Entender la <span class="fg" style="--col: #FF8000">heterogeneidad</span> de los compradores para hacer el proceso de <em>señalización</em> o <span class="fg" style="--col: #e64173">targeting</span>, personalización, recomendaciones y desarrollo de productos</li>
+<li class="fragment">Privacidad y seguridad, <em>p.e</em> Uso indebido, robo, cumplimiento de leyes, etc.</li>
+</ul>
+</div>
+</section></section>
+<section>
+<section id="miremos-las-métricas" class="title-slide slide level1 center">
+<h1>Miremos las métricas <span class="emoji" data-emoji="smile">😄</span></h1>
+
+</section>
+<section id="métricas" class="slide level2">
+<h2>Métricas</h2>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 19
+  gender height handsize   age gaming  chat  maps video social reading
+  &lt;chr&gt;   &lt;dbl&gt;    &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;   &lt;dbl&gt;
+1 female   71       7.88    20   316.  282.  77.0  500.   176.    93.4
+2 male     64.6     5.63    20   442.  163.  17.5  588.   104.    62.3
+3 male     66.8     7.5     20   245.  362. 143.   357.   319.    82.7
+4 male     67.3     5.97    19   386.  202.  82.7  538.   244.   117. 
+5 male     68.1     6.71    19   204.  408. 144.   242.   344.    67.5
+6 male     67.9     7.7     20   499.  157.  56.6  374.   112.    48.6
+# ℹ 9 more variables: total_minutes &lt;dbl&gt;, days_ago &lt;dbl&gt;, years_ago &lt;dbl&gt;,
+#   discount &lt;chr&gt;, phone_id &lt;chr&gt;, brand &lt;chr&gt;, size_cat &lt;chr&gt;, price &lt;dbl&gt;,
+#   screen_size &lt;dbl&gt;</code></pre>
+</div>
+</div>
+<ul>
+<li>Por lo pronto solo tenemos datos y estructura matricial de ellos.</li>
+<li>Algunas <span class="fg" style="--col: #FF0000">variables</span> son los minutos de tiempo que gastan los individuos en esa “apk”.</li>
+</ul>
+</section>
+<section id="métricas-1" class="slide level2">
+<h2>Métricas</h2>
+<div class="panel-tabset">
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Filtro: Edad</a></li><li><a href="#tabset-1-2">Filtro: Altura</a></li><li><a href="#tabset-1-3">Agrupación: Media</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1">
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 34 × 19
+   gender height handsize   age gaming  chat   maps video social reading
+   &lt;chr&gt;   &lt;dbl&gt;    &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;   &lt;dbl&gt;
+ 1 female   70.2     8.56    24  621.   203.  78.1   485.  184.     66.5
+ 2 male     65.1     6.87    24  275.   124. 121.    399.   83.0    90.8
+ 3 female   67.1     8.24    24   85.4  257. 263.    193.  138.    338. 
+ 4 female   67.1     7.38    24  161.   280.  73.3   260.  261.    150. 
+ 5 female   59.6     5.65    24    0    288. 332.    184.   44.1   415. 
+ 6 male     74.6     8.88    24  358.   204.   9.26  586.  154.     94.6
+ 7 male     67.8     6.96    24  202.   211. 189.    299.   77.6   256. 
+ 8 male     70.8     8.84    24  350.   203.  18.8   433.  140.     32.0
+ 9 male     72.4     8       24  201.   339. 110.    314.  252.    102. 
+10 male     69.3     7.15    24  329.   182.  53.5   507.  121.      0  
+# ℹ 24 more rows
+# ℹ 9 more variables: total_minutes &lt;dbl&gt;, days_ago &lt;dbl&gt;, years_ago &lt;dbl&gt;,
+#   discount &lt;chr&gt;, phone_id &lt;chr&gt;, brand &lt;chr&gt;, size_cat &lt;chr&gt;, price &lt;dbl&gt;,
+#   screen_size &lt;dbl&gt;</code></pre>
+</div>
+</div>
+<ul>
+<li>Lo anterior tiene un filtro de edad de usuario correspondiente a : <code>edad=24</code></li>
+</ul>
+</div>
+<div id="tabset-1-2">
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 34 × 2
+   height handsize
+    &lt;dbl&gt;    &lt;dbl&gt;
+ 1   58.8     5.78
+ 2   59.2     5.98
+ 3   59.6     5.65
+ 4   59.9     5.38
+ 5   60.1     6.23
+ 6   60.6     5.74
+ 7   61.1     6.01
+ 8   64.3     6.92
+ 9   64.7     7.1 
+10   64.8     7.45
+# ℹ 24 more rows</code></pre>
+</div>
+</div>
+<ul>
+<li>Solo tomando en consideración dos columnas</li>
+</ul>
+</div>
+<div id="tabset-1-3">
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 7 × 2
+    age Promedio_height
+  &lt;dbl&gt;           &lt;dbl&gt;
+1    18            66.5
+2    19            66.6
+3    20            66.5
+4    21            66.4
+5    22            66.8
+6    23            66.5
+7    24            66.4</code></pre>
+</div>
+</div>
+<ul>
+<li>Qué nos dice esto?</li>
+</ul>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="visualicemos-un-poco" class="title-slide slide level1 center">
+<h1>Visualicemos un poco <span class="emoji" data-emoji="hot_pepper">🌶️</span></h1>
+
+</section>
+<section id="gráficos" class="slide level2">
+<h2>Gráficos</h2>
+<div>
+<ul>
+<li class="fragment"><p>En algunos <span class="emoji" data-emoji="warning">⚠️</span> <span class="bg" style="--col: #FFFF00">casos</span> visualizar gráficos nos permite explorar mejor lo que no es tan facil ver (dentro) de las tablas de datos.</p></li>
+<li class="fragment"><p>Un mapa acorde a los elementos de <span class="under">análisis</span> son los llamados gráficos de orden de <span class="bg" style="--col: #00FFFF">distribución</span></p></li>
+</ul>
+</div>
+</section>
+<section id="graficos" class="slide level2">
+<h2>Graficos</h2>
+<div class="panel-tabset">
+<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">Dispersión</a></li><li><a href="#tabset-2-2">Histograma</a></li><li><a href="#tabset-2-3">Hist. por Marca</a></li><li><a href="#tabset-2-4">Bigotes</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1">
+<div class="cell">
+<div class="cell-output-display">
+<p><img data-src="Intro1_files/figure-revealjs/unnamed-chunk-7-1.png" width="960"></p>
+</div>
+</div>
+</div>
+<div id="tabset-2-2">
+<div class="cell">
+<div class="cell-output-display">
+<p><img data-src="Intro1_files/figure-revealjs/unnamed-chunk-8-1.png" width="960"></p>
+</div>
+</div>
+</div>
+<div id="tabset-2-3">
+<div class="cell">
+<div class="cell-output-display">
+<p><img data-src="Intro1_files/figure-revealjs/unnamed-chunk-9-1.png" width="960"></p>
+</div>
+</div>
+</div>
+<div id="tabset-2-4">
+<div class="cell">
+<div class="cell-output-display">
+<p><img data-src="Intro1_files/figure-revealjs/unnamed-chunk-10-1.png" width="960"></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="prueba-en-selección" class="slide level2">
+<h2>Prueba en selección</h2>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 6 × 3
+# Groups:   brand [3]
+  brand   size_cat num_consumers
+  &lt;chr&gt;   &lt;chr&gt;            &lt;int&gt;
+1 apple   s                  800
+2 samsung s                  741
+3 apple   l                  515
+4 samsung l                  334
+5 huawei  l                  321
+6 huawei  s                  289</code></pre>
+</div>
+</div>
+<ul>
+<li>De acuerdo a la selección de telefonos por tamaño sea <code>large</code> o <code>short</code> es diferente entre marcas</li>
+</ul>
+</section>
+<section id="estadistica-básica" class="slide level2">
+<h2>Estadistica Básica</h2>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 4
+  Promedio mediana varianza    sd
+     &lt;dbl&gt;   &lt;dbl&gt;    &lt;dbl&gt; &lt;dbl&gt;
+1     66.5    66.8     20.4  4.52</code></pre>
+</div>
+</div>
+<ul>
+<li>Con respecto a la altura de cada marca de <span class="alert">teléfono</span> en referencia.</li>
+<li>Podemos concluir varias cosas en referencia a sus <span class="bg" style="--col: #FFFF00">atributos</span></li>
+</ul>
+</section></section>
+<section>
+<section id="regresemos-a-lo-teórico" class="title-slide slide level1 center">
+<h1>Regresemos a lo teórico <span class="emoji" data-emoji="grimacing">😬</span></h1>
+
+</section>
+<section id="aspectos-a-tener-en-cuenta" class="slide level2">
+<h2>Aspectos a tener en cuenta</h2>
+<div>
+<ul>
+<li class="fragment">Precisión : Los datos son lo que creemos que son.</li>
+<li class="fragment">Representativos : Los datos reflejan la población de clientes pertinente en su conjunto.</li>
+<li class="fragment">Privados : Los datos no son perjudiciales y cumplen la legislación y la ética.</li>
+<li class="fragment">Pertinentes: Los datos correctos para la decisión en cuestión.</li>
+<li class="fragment">Completos : La falta de datos podría causar problemas.</li>
+</ul>
+</div>
+</section>
+<section id="tipos-de-datos" class="slide level2">
+<h2>Tipos de datos</h2>
+<div class="fragment">
+<div class="callout callout-note no-icon callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<p><strong>Atributos del cliente:</strong></p>
+</div>
+<div class="callout-content">
+<p>Demografía, psicografía, necesidades, comportamiento</p>
+</div>
+</div>
+</div>
+</div>
+<div class="fragment">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Atributos del producto:</strong></p>
+</div>
+<div class="callout-content">
+<p>Características tangibles, características intangibles (por ejemplo, marca, nombre, garantía), costos</p>
+</div>
+</div>
+</div>
+</div>
+<div class="fragment">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Atributos de la transacción/evento:</strong></p>
+</div>
+<div class="callout-content">
+<p>Ventas, contexto minorista, tiempo, “3 B”, anuncios, valoraciones, reseñas, publicaciones, quejas, solicitudes de asistencia, devoluciones, recomendaciones</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="tipos-de-datos-1" class="slide level2">
+<h2>Tipos de datos</h2>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+
+<table class="tg" data-quarto-postprocess="true">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th class="tg-0pky" data-quarto-table-cell-role="th">Tipo</th>
+<th class="tg-0pky" data-quarto-table-cell-role="th">Sub-indice</th>
+<th class="tg-0pky" data-quarto-table-cell-role="th">Ventajas</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td class="tg-0lax">Panel</td>
+<td class="tg-0lax">$it$</td>
+<td class="tg-0lax">- Seguimiento<br>
+- Control de efectos</td>
+</tr>
+<tr class="even">
+<td class="tg-0lax">Corte<br>
+Transversal</td>
+<td class="tg-0lax">$i$</td>
+<td class="tg-0lax">- Económico<br>
+- Un solo momento</td>
+</tr>
+<tr class="odd">
+<td class="tg-0lax">Serie de<br>
+Tiempo</td>
+<td class="tg-0lax">$t$</td>
+<td class="tg-0lax">- Macroeconómico<br>
+- Para evolución</td>
+</tr>
+</tbody>
+</table>
+<p><span class="pseudocode-small">- Un panel de datos es <span class="alert">costoso</span>, hay que hacer <span class="blur">seguimiento</span> <br> - Los cortes son mas frecuentes de usar pero solo nos miden en un momento de <span class="blur">tiempo</span> <br> - Las series de tiempo se usan muchas veces para campañas de <span class="blur">evolución</span></span></p>
+</section>
+<section id="guía-para-los-datos-con-compradores" class="slide level2">
+<h2>Guía para los datos con compradores</h2>
+<ul>
+<li>Empieza simple, no es necesaria la <span class="under">complejidad</span></li>
+<li>Nunca asuma que todos los datos son <em>correctos</em>, limpie, describa, analice…</li>
+</ul>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-bottom">
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 45.5%;justify-content: center;">
+<p>&nbsp;</p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 54.6%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="graphs/pic4.png"></p>
+<figcaption>X: ahora twitter</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="paquetes-de-trabajo" class="slide level2">
+<h2>Paquetes de trabajo</h2>
+<div class="fragment">
+<ul>
+<li>C++, Java, FORTRAN</li>
+<li>SQL, SAS, SPARK</li>
+<li>Python, R</li>
+<li>Matlab, Octave, Julia</li>
+<li>S-Plus, STATA, SPSS, EVIEWS</li>
+</ul>
+</div>
+<div class="fragment">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Cientificos de datos de hoy</strong></p>
+</div>
+<div class="callout-content">
+<p>SQL + Python + R</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="mas-generalidades" class="slide level2">
+<h2>Mas generalidades</h2>
+<div>
+<ul>
+<li class="fragment">La <span class="alert">analítica</span> es más importante en <strong>B2C</strong> que en <strong>B2B</strong> (¿por qué?)</li>
+<li class="fragment">Los efectos de selección (sesgos) suelen ser grandes</li>
+<li class="fragment">los efectos del <span class="blur">tratamiento</span> suelen ser pequeños</li>
+<li class="fragment">Los datos <span class="under">demográficos</span> no predicen muy bien el comportamiento.</li>
+<li class="fragment">Las agencias mienten!! a veces sobre los datos</li>
+<li class="fragment">La credibilidad es limitada.</li>
+<li class="fragment">Se dice: “Si está escrito en LaTeX, probablemente sea correcto”</li>
+</ul>
+</div>
+</section></section>
+<section>
+<section id="entorno-python-fa-brands-python" class="title-slide slide level1 center">
+<h1>Entorno Python <i class="fa-brands fa-python" aria-label="python"></i></h1>
+
+</section>
+<section id="entorno-python-fa-brands-python-1" class="slide level2">
+<h2>Entorno Python <i class="fa-brands fa-python" aria-label="python"></i></h2>
+<p>Vamos a iniciar algo con un programa como Python</p>
+<ul>
+<li>Primero podemos crear un vector</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a>x <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]</span>
+<span id="cb7-2"><a href="#cb7-2"></a><span class="bu">print</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1, 2, 3]</code></pre>
+</div>
+</div>
+<ul>
+<li>Luego podemos darnos la bienvenida</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a><span class="bu">print</span>(<span class="st">"hola marketer"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>hola marketer</code></pre>
+</div>
 </div>
 <div class="footer footer-default">
 
@@ -743,6 +1257,44 @@ Carlos Andrés Yanes
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

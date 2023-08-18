@@ -8,7 +8,25 @@ author:
   - name: Carlos Andrés Yanes
     email: cayanes@uninorte.edu.co
     affiliations: Universidad del Norte
+from: markdown+emoji
 ---
+
+## Presentación
+
+### Recursos para la clase
+
+- [Course website:]{.alert} [Carlos Yanes](https://carlosyanes.netlify.app)
+- [Syllabus](https://carlosyanes.netlify.app/contenidoc/Syllabusanpre.pdf)
+- En Persona?
+Departamento Economía Oficina D-215
+
+- [Hoy:]{.blur} Introducción a Analytics y Generalidades
+- Lecturas:
+  - [Lect. 1: Analytics in Marketing](https://carlosyanes.netlify.app/contenidoc/Lectmercadeo/Lecture01.pdf)
+- [Tareas:]{.alert} De acuerdo al trabajo final por desarrollar
+- [Ayudas:]{.alert} [La biblia del programador](https://stackoverflow.com/)
+
+## {background-color="black" background-image="https://media.giphy.com/media/8FVcs24aSuQBpHPg4n/giphy.gif" background-size="1000px"}
 
 ## Presentación
 
@@ -145,12 +163,311 @@ flowchart TD
 - Segmento: Un subgrupo [distintivo]{.fg style="--col: #FF8000"} de compradores similares
 - Target: Segmento al cual la firma desea atender o vender
 - Posicionamiento: Especificaciones del producto para [satisfacer]{.fg style="--col: #FFC0CB"} un grupo de segmentos
-- Marketing: Practica que busca satisfacer necesidades de los clientes de forma rentable.
+- Marketing: Practica que busca [satisfacer]{.fg style="--col: #FFC0CB"} necesidades de los clientes de forma rentable.
 
 :::
 
+# Hagalo usted mismo/a :cowboy_hat_face:
+
+1. Plantee un diagrama de recopilación de datos
+
+2. Mencione las fases para la transformarción
+
+3. Discuta con los compañero/as un target/segmento de mercado
 
 
 
+# Datos de compradores
 
+## Datos de compradores
+
+::: {.incremental}
+
+- Customer Analitycs que viene a ser?
+
+- Mercadeo que es?
+
+- [Datos de compradores]{.fg style="--col: #FF8000"} nos muestra como los compradores y consumidores aprenden, sienten, se comportan cuando [hacen uso]{.bg style="--col: #FFFF00"} de bienes y servicios.
+
+- Poseer datos incrementa de forma sustancial la administración del mercadeo y la implementación de estrategias de formas muy completas.
+
+:::
+
+## Como podemos usar los datos de compradores?
+
+::: {.incremental}
+- En cuanto a la administración queremos adquirir, desarrollar, retener y bombardear a los compradores.
+- Marketing Mix: Nos permite mejorar la oferta de productos de la compañia, precios, promociones y distribución
+- Entender la [heterogeneidad]{.fg style="--col: #FF8000"} de los compradores para hacer el proceso de *señalización* o [targeting]{.fg style="--col: #e64173"}, personalización, recomendaciones y desarrollo de productos
+- Privacidad y seguridad, *p.e* Uso indebido, robo, cumplimiento de leyes, etc.
+:::
+
+# Miremos las métricas :smile:
+
+## Métricas
+
+```{r}
+library(pacman)
+p_load(tidyverse, readr)
+datoscompradorphone <- read_csv("datoscompradorphone.csv")
+dataup<-datoscompradorphone
+head(dataup)
+```
+
+- Por lo pronto solo tenemos datos y estructura matricial de ellos.
+- Algunas [variables]{.fg style="--col: #FF0000"} son los minutos de tiempo que gastan los individuos en esa "apk".
+
+## Métricas
+
+::: panel-tabset
+
+### Filtro: Edad
+
+```{r}
+dataup |> filter(age == 24)
+```
+
+- Lo anterior tiene un filtro de edad de usuario correspondiente a : `edad=24`
+
+### Filtro: Altura
+
+```{r}
+dataup |> filter(age == 24) |> 
+  arrange(height) |> select(height, handsize)
+```
+
+- Solo tomando en consideración dos columnas 
+
+### Agrupación: Media  
+
+```{r}
+dataup |> group_by(age) |> summarize(Promedio_height = mean(height))
+```
+
+- Qué nos dice esto?
+
+:::
+
+# Visualicemos un poco :hot_pepper:
+
+## Gráficos
+
+::: {.incremental}
+
+- En algunos :warning: [casos]{.bg style="--col: #FFFF00"} visualizar gráficos nos permite explorar mejor lo que no es tan facil ver (dentro) de las tablas de datos.
+
+- Un mapa acorde a los elementos de [análisis]{.under} son los llamados gráficos de orden de [distribución]{.bg style="--col: #00FFFF"}
+
+:::
+
+## Graficos
+
+::: panel-tabset
+
+### Dispersión
+
+```{r}
+library(ggplot2)
+ggplot(data= dataup, mapping=aes(x=age, y=gaming))   + 
+geom_point(alpha = 0.2)
+```
+
+### Histograma
+
+```{r}
+ggplot(dataup, aes(x=gaming, color=gender)) +
+  geom_histogram(fill="white", alpha=0.5, position="identity")
+```
+
+### Hist. por Marca
+
+```{r}
+ggplot(dataup, aes(x=gaming, color=brand)) +
+  geom_histogram(fill="white", alpha=0.5, position="identity")
+```
+
+### Bigotes
+
+```{r}
+ggplot(dataup, aes(x = brand, y = gaming)) +
+  geom_boxplot()
+```
+
+
+:::
+
+## Prueba en selección
+
+```{r}
+dataup |> 
+  group_by(brand, size_cat) |> 
+  summarize(num_consumers = n()) |> 
+  arrange(desc(num_consumers))
+```
+
+- De acuerdo a la selección de telefonos por tamaño sea `large` o `short` es diferente entre marcas
+
+## Estadistica Básica
+
+```{r}
+dataup |>
+  summarise(
+    Promedio = mean(height),
+    mediana = median(height),
+    varianza = var(height),
+    sd = sd(height)
+  )
+```
+
+- Con respecto a la altura de cada marca de [teléfono]{.alert} en referencia.
+- Podemos concluir varias cosas en referencia a sus [atributos]{.bg style="--col: #FFFF00"}
+
+# Regresemos a lo teórico :grimacing:
+
+## Aspectos a tener en cuenta
+
+:::{.incremental}
+
+- Precisión : Los datos son lo que creemos que son.
+- Representativos : Los datos reflejan la población de clientes pertinente en su conjunto.
+- Privados : Los datos no son perjudiciales y cumplen la legislación y la ética.
+- Pertinentes: Los datos correctos para la decisión en cuestión.
+- Completos : La falta de datos podría causar problemas.
+:::
+
+## Tipos de datos
+
+:::{.fragment}
+::: {.callout-note icon=false}
+## Atributos del cliente:
+Demografía, psicografía, necesidades, comportamiento
+:::
+:::
+
+:::{.fragment}
+::: {.callout-tip}
+## Atributos del producto:
+Características tangibles, características intangibles (por ejemplo, marca, nombre, garantía), costos
+:::
+:::
+
+:::{.fragment}
+::: {.callout-tip}
+## Atributos de la transacción/evento:
+Ventas, contexto minorista, tiempo, "3 B", anuncios, valoraciones, reseñas, publicaciones, quejas, solicitudes de asistencia, devoluciones, recomendaciones
+:::
+:::
+
+## Tipos de datos
+
+```{=html}
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky">Tipo</th>
+    <th class="tg-0pky">Sub-indice</th>
+    <th class="tg-0pky">Ventajas</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax">Panel</td>
+    <td class="tg-0lax">$it$</td>
+    <td class="tg-0lax">- Seguimiento<br>- Control de efectos</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Corte<br>Transversal</td>
+    <td class="tg-0lax">$i$</td>
+    <td class="tg-0lax">- Económico<br>- Un solo momento</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Serie de<br>Tiempo</td>
+    <td class="tg-0lax">$t$</td>
+    <td class="tg-0lax">- Macroeconómico<br>- Para evolución</td>
+  </tr>
+</tbody>
+</table>
+```
+
+
+[
+- Un panel de datos es [costoso]{.alert}, hay que hacer [seguimiento]{.blur}
+<br/>
+- Los cortes son mas frecuentes de usar pero solo nos miden en un momento de [tiempo]{.blur}
+<br/>
+- Las series de tiempo se usan muchas veces para campañas de [evolución]{.blur}
+]{.pseudocode-small}
+
+## Guía para los datos con compradores
+
+- Empieza simple, no es necesaria la [complejidad]{.under}
+- Nunca asuma que todos los datos son *correctos*, limpie, describa, analice...
+
+::: {layout="[-5,6]" layout-valign="bottom"}
+![X: ahora twitter](graphs/pic4.png)
+:::
+
+## Paquetes de trabajo
+
+::: {.fragment}
+- C++, Java, FORTRAN
+- SQL, SAS, SPARK
+- Python, R
+- Matlab, Octave, Julia
+- S-Plus, STATA, SPSS, EVIEWS
+:::
+
+::: {.fragment}
+::: callout-tip
+## Cientificos de datos de hoy
+SQL + Python + R
+:::
+:::
+
+## Mas generalidades
+
+::: {.incremental}
+- La [analítica]{.alert} es más importante en **B2C** que en **B2B** (¿por qué?)
+- Los efectos de selección (sesgos) suelen ser grandes
+- los efectos del [tratamiento]{.blur} suelen ser pequeños
+- Los datos [demográficos]{.under} no predicen muy bien el comportamiento.
+- Las agencias mienten!! a veces sobre los datos
+- La credibilidad es limitada.
+- Se dice: "Si está escrito en LaTeX, probablemente sea correcto"
+:::
+
+# Entorno Python {{< fa brands python >}}
+
+## Entorno Python {{< fa brands python >}}
+
+```{r, setup}
+#| include: false
+library(reticulate)
+```
+
+Vamos a iniciar algo con un programa como Python
+
+- Primero podemos crear un vector
+
+```{python}
+#| echo: true
+x = [1, 2, 3]
+print(x)
+```
+
+- Luego podemos darnos la bienvenida
+
+```{python}
+#| echo: true
+print("hola marketer")
+```
 
