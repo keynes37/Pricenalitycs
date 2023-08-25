@@ -2,10 +2,12 @@
 
 // Custom colours and variables
 $nit: #131516;
-$cup: #107895;
+$cup: #149a9d;
 $cup2: #9a2515;
 $pink: #e64173;
 $blue: #4285F4;
+$red: #FF0000;
+$orange: #f6870f;
 
 .alert {
   color: $pink;
@@ -15,6 +17,17 @@ $blue: #4285F4;
   color: $blue;
 }
 
+.reder {
+  color: $red;
+}
+
+.cupp{
+  color: $cup;
+}
+
+.oranger{
+  color: $orange;
+}
 
 .fg {
   color: var(--col, $nit);
