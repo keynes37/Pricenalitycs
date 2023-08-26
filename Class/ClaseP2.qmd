@@ -538,3 +538,220 @@ Los [segmentos]{.cupp} deben ser relevantes para los objetivos de la empresa, id
 ### Siempre hay por donde tener clientes
 
 ![](graphs/gruponutre.jpeg)
+
+# Hagalo usted mismo/a
+
+- Ingrese al sitio web de:[link firefox](https://blog.mozilla.org/ux/2013/08/firefox-user-types-in-north-america/)
+- Discuta primero con quien se identifica
+- ¿Qué hay de importante?
+
+# Segmentación en tecnica
+
+## Las empresas no hacen públicos los segmentos
+
+:::{.fragment}
+- [Ejemplo 1]{.blur}: "Abastecemos nuestras tiendas con lo que nos gusta, aprovechando nuestro interés -y el de nuestros clientes- por el arte contemporáneo, la música y la moda..
+:::
+
+:::{.fragment}
+- [Ejemplo 2]{.blur}: Ofrecemos una experiencia de compra específica para el estilo de vida de una persona educada y de mentalidad urbana de entre los 18 y 30 años de edad..."
+:::
+
+:::{.fragment}
+- [Ejemplo 3]{.blur}: Nuestro cliente está muy implicado en el comportamiento de apareamiento y citas... uno de los principales motores de su comportamiento de gasto... se esfuerza por posponer la edad adulta... ''
+:::
+
+## Un ejemplo en investigación
+
+### Caso de promoción
+
+- Para cualquier descuento de [precio]{.cupp} < margen de contribución, dar un cupón a...
+
+    - Nuestro cliente fiel a la marca reduce directamente el beneficio
+
+    - Un cliente marginal puede aumentar el beneficio
+
+    - Un cliente fiel a otra marca no modifica el beneficio.
+
+:::{.fragment}
+Por tanto, el reto del [modelo de demanda]{.oranger} es identificar correctamente a los [clientes marginales]{.redder} sin identificar accidentalmente al cliente fiel a nuestra marca.
+:::
+
+## Conjuntos de información
+
+- [Datos demográficos básicos]{.reder}: 
+
+    - Ingresos, Tamaño de la familia, Jubilado, Desempleado, Madre soltera.
+
+- [Datos demográficos adicionales]{.reder}: 
+
+    -Edad, Secundaria, Universidad, Cuello blanco, N° Hijos, Casado, N° Perros, N° Gatos, Inquilino, N° TVs
+
+- [Historial de compras]{.oranger}: 
+
+    - Cuotas de compra de marcas, recuentos de compras de marcas, cuota de descuentos, cuota de características, cuota de expositores, N° marcas compradas, gasto total
+
+## Modelo de demanda 
+
+:::{.fragment}
+::: {.callout-note}
+## Función de demanda
+$$Q(X)=Gustos,\;Ingreso,\;Precios,\;Edad,\cdots$$
+:::
+:::
+
+:::{.fragment}
+::: {.callout-important}
+## Modelo
+$$\color{#9370DB}{Demanda_i} = \beta_0 + \beta_1~\color{#FF0000
+}{Precios_i} + \varepsilon_i$$
+:::
+:::
+
+
+## De los modelos
+
+:::{.incremental}
+- Para predecir el **comportamiento**, utilice el comportamiento pasado
+
+- La teoría económica puede ayudar a que los modelos de demanda funcionen bien con datos de comportamiento limitados
+
+- El rendimiento del Machine Learning depende críticamente de la calidad del predictor
+
+- Rendimiento estadístico ≠ rendimiento económico
+
+- Construiremos modelos logit con datos de compra en las siguientes semanas
+:::
+
+# Preguntas
+
+1. Mencione algunos atributos que debe tener una buena segmentación de mercado?
+
+2. Supongamos que segmentamos el mercado de smartphones en función de la marca deseada por cada cliente. [¿Es éste un buen enfoque?]{.reder}
+
+## Respuesta
+
+:::{.fragment}
+`r fa("bell", fill="red")` ¿Cómo elegir los atributos?,
+Queremos [segmentar]{.cupp} en función de atributos que impulsen las ventas, los beneficios y la retención. ¿Pero cómo?
+:::
+
+:::{.fragment} 
+1. Teoría
+2. Estudio de mercado
+3. Base de datos de clientes
+4. Consultar a expertos en clientes (vendedores)
+5. Averiguar qué hacen otras empresas
+6. Dejar que los datos de ventas elijan por nosotros
+:::
+
+
+## Otra forma de segmentar
+
+En esta parte se hará explicación de uno de los primeros algoritmos de _clasificación_ denominado **vecino cercano**. Información adicional de referencia teórica puede encontrar en Samet (2007).
+
+Este algoritmo, es denominado **algoritmo perezoso** pero eso no es tan malo del todo, ni es el peor de la familia de algoritmos de clasificación, por el contrario, es de fácil implementación y tiene unas consideraciones, que cualquiera puede optar por usar.
+
+## K-means 
+
+Para clasificar, siempre se tienen premisas, entre esas:
+
+- Cosas que suelen ser **parecidas** tienen cosas en la cual pueden ser _similares_.
+
+>Blanco es, gallina lo pone y frito se come
+
+* Tiene varias ventajas
+  - Simple y es altamente efectivo
+  - No requiere de distribución alguna
+  - Su entrenamiento en fase es sencillo
+
+## K-means
+
+- También tiene desventajas
+  - No produce un **modelo** (no hay relación entre variables)
+  - Requiere de una selección optima de **K**
+  - Tiene fase lenta de clasificación
+  - Si tiene nominales y missing values se requieren procesos adicionales
+  
+## Lo que hace
+
+La idea parte en casos que no son "clasificados", lo sean a partir de su vecino mas cercano. Se hace a partir de la **Fase de entrenamiento**, que debe poseer elementos ya clasificados previamente. Aquellos casos que sean mas difíciles de clasificar se van a ir a la _categoría_ con mas vecinos.
+
+## Un ejemplo simple
+
+Suponga que se toma a un individuo $i \in \{1,2,3,\dots, n  \}$ y se le hace una propuesta que de pruebe un alimento novedoso y se le pide que lo clasifique. Antes de eso ya se tiene una _base_ que tiene una previa clasificación y que lo tiene como:
+`Crujiente (1 a 10) <-> Dulce (1 a 10)` 
+La definición será tomarlo como: _fruta, vegetal o proteína_. 
+
+```{r, echo=FALSE}
+library(pacman)
+p_load(tidyverse, flextable)
+data.frame(
+  fr = c('Pera', 'Manzana', 'Tocineta', 'Filet Mignom', 'Habichuela', 'Queso', 'Banano','Zanahoria'),
+  dl = c(10,10,1,1,3,2,10,5),
+  cr = c(9, 8, 1, 1, 7, 1,1,10),
+  tipo = c('Fruta', 'Fruta', 'Proteina', 'Proteina', 'Vegetal', 'Proteina', 'Fruta','Vegetal'))  %>% 
+  flextable() %>% 
+  colformat_double(j = 4, digits = 3) %>% 
+  mk_par(j = 1, part = "header", value = as_paragraph(as_i("X"), as_sub("i"))) %>% 
+  mk_par(j = 2, part = "header", value = as_paragraph(as_i("Dulzura"), as_sub("i"))) %>% 
+  mk_par(j = 3, part = "header", value = as_paragraph(as_i("Crocancia"), as_sub("i"))) %>% 
+  mk_par(j = 4, part = "header", value = as_paragraph(as_i("Clasificación"))) %>% 
+  autofit()
+```
+
+## Del Ejemplo
+
+Según Gallego(2017), podría uno establecer un tipo de gráfico de la forma:
+
+```{r gra1, echo=FALSE, out.width='75%', fig.align='center'}
+knitr::include_graphics("graphs/g1.png")
+```
+De lo anterior, **¿existe algún patrón?**. Si le dijera que tenemos un _tomate_, como lo clasificaría? Fruta o vegetal?
+
+## La idea 
+
+Para tener vecinos, hay que tener un indicador o medida para eso. Uno recursivo puede ser la distancia euclídeana.
+
+$$dist (p,q) = \sqrt{ \sum_{i=1}^{m}(p_{i}-q_{i})^{2}}$$
+Donde $p$ y $q$ son vectores de m-dimensiones. Para ser un poco mas claros, intentemos lo del _tomate_.
+
+## Tabla
+
+| Variable   | Dulzura | Crocancia | Clasificación | Distancia                         |
+|------------|---------|-----------|---------------|-----------------------------------|
+| Uvas        | 8       | 5         | Fruta         | $\sqrt{(6-8)^{2}+(4-5)^{2}}=2.23$ |
+| Naranja    | 7       | 3         | Fruta         | $\sqrt{(6-7)^{2}+(4-3)^{2}}=1.41$ |
+| Habichuela | 3       | 7         | Vegetal       | $\sqrt{(6-3)^{2}+(4-7)^{2}}=4.24$ |
+| Nueces     | 3       | 8         | Proteína      | $\sqrt{(6-3)^{2}+(4-8)^{2}}=5.00$ |
+
+## Adicional
+
+De acuerdo a lo anterior, entonces el _tomate_ es una _fruta_ ya que su vecino mas cercano $K=1$ es la naranja. Si ampliamos el espectro a $K=2$ tendría dos vecinos y estas son la uva y la naranja respectivamente.
+
+`r fa("bell", fill="red")` [Elección de K]{.reder}
+
+La letra $K$ viene a ser el número optimo de vecinos y _he aquí_ uno de los principales retos. Seleccionar optimamente el número de vecinos apropiados para realizar una correcta **clasificación** es toda una tarea.
+
+## Frente a eso {.smaller}
+
+- Es consecuentemente lo mas crucial
+- Existe un "trade-off" entre **sesgo** y **varianza**
+- Un $K$ mayor es menor varianza pero mas sesgo al ignorar pequeños patrones.
+- Si $K$ es menor o pequeño hay mas sesgo pero y si hay un problema clasificación previa, todo seria peor.
+- No hay mecanismo idóneo, pero una idea puede rondar con $k=\sqrt{n}$.
+- Si tenemos 25 observaciones, entonces $k=5$.
+- Igual, hay que tener mucho cuidado y lo mejor es hacer varios entrenamientos.
+- Otra opción es votación ponderada.
+
+## Objetivo
+
+Hacer uso del algoritmo de clasificación **K-nearest**:
+
+- Cargar o importar datos
+- Conocer los datos
+- Implementar el algoritmo
+- Evaluar resultados
+
+
+
