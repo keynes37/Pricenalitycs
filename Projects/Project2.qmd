@@ -1,0 +1,27 @@
+---
+title: "Workclass 02"
+author: "Carlos Andres Yanes Guerra"
+subtitle: "Departamento de Economía"
+institute: "Universidad del Norte"
+format:
+  pdf:
+    toc: true
+    number-sections: true
+    colorlinks: true
+---
+
+# Presentación
+
+Este Workclass pretende mirar las aplicaciones en decisiones de **Riesgo** e **incertidumbre** con ambiente manual y desde luego en **Python**, replicando lo hecho en clases y viendo la manera de plantearlo en una hoja de trabajo.
+
+## Objetivo
+
+En el proceso de familiarización con las herramientas académicas, es esencial adquirir habilidades en el uso de **Google Colab** y comprender la estructura y funcionalidades de los documentos tipo **Markdown**. Además, se debe aplicar un análisis descriptivo, aprovechando los formatos y métricas discutidas en las lecciones.
+
+En esta etapa, se presentará una base de datos de ejemplo denominada "DEMO". Se sugiere inicialmente la creación de un archivo Excel donde los datos puedan ser trasladados para una primera interacción. A continuación, se recomienda importar temporalmente los datos al entorno de Colab, lo que permitirá iniciar el trabajo y la visualización del proceso completo.
+
+Es importante destacar que este ejercicio no solo facilitará la comprensión práctica, sino también proporcionará una plataforma para aplicar los conceptos teóricos en un contexto real. Mediante la combinación de estas herramientas, se maximizará el aprendizaje y la capacidad para realizar análisis efectivos en el futuro.
+
+
+\newpage
+# Propuesta General
