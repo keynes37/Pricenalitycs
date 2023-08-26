@@ -16,12 +16,51 @@ Este Workclass pretende mirar las aplicaciones en decisiones de **Riesgo** e **i
 
 ## Objetivo
 
-En el proceso de familiarización con las herramientas académicas, es esencial adquirir habilidades en el uso de **Google Colab** y comprender la estructura y funcionalidades de los documentos tipo **Markdown**. Además, se debe aplicar un análisis descriptivo, aprovechando los formatos y métricas discutidas en las lecciones.
+El análisis y la toma de decisiones empresariales se ven profundamente influenciados por los elementos críticos como lo son: el **riesgo** y la **incertidumbre**. Estos factores juegan un papel fundamental al determinar el camino que una empresa debe seguir. El riesgo, entendido como la posibilidad de resultados no deseados a pesar de tomar decisiones informadas, subraya la necesidad de evaluar detenidamente las opciones y sopesar sus posibles contingencias. Por otro lado, la incertidumbre, que se refiere a la falta de información completa y la imprevisibilidad que nos depara el futuro, resalta la importancia de la flexibilidad y la adaptabilidad en la toma de decisiones.
 
-En esta etapa, se presentará una base de datos de ejemplo denominada "DEMO". Se sugiere inicialmente la creación de un archivo Excel donde los datos puedan ser trasladados para una primera interacción. A continuación, se recomienda importar temporalmente los datos al entorno de Colab, lo que permitirá iniciar el trabajo y la visualización del proceso completo.
+En este contexto, el establecimiento de estrategias de precios se convierte en un terreno especialmente vulnerable. La incertidumbre sobre la reacción de los consumidores ante un cambio de precio, así como las fluctuaciones en los costos de producción y las condiciones del mercado, hacen que la fijación de precios sea una tarea compleja. Evaluar estas variables con atención esencial para evitar consecuencias adversas, como una pérdida de participación en el mercado o una reducción de los márgenes de ganancia. Las **estrategias de precios** deben equilibrar hábilmente la necesidad de generar ingresos con la capacidad del mercado para absorber cambios, y esto requiere una comprensión profunda de las dinámicas del mercado y una anticipación precisa de los posibles resultados.
 
-Es importante destacar que este ejercicio no solo facilitará la comprensión práctica, sino también proporcionará una plataforma para aplicar los conceptos teóricos en un contexto real. Mediante la combinación de estas herramientas, se maximizará el aprendizaje y la capacidad para realizar análisis efectivos en el futuro.
-
-
-\newpage
 # Propuesta General
+
+**1.** Para absorber los excesos de capacidad de producción a corto plazo de una planta en Barranquilla, **Quilleros S.A** está considerando la posibilidad en lugar de fabricar dos productos, solo fabricar uno de ellos, esto es, decidir si fabricar el sensor de temperatura (producto 1) o fabricar el sensor de presión (producto 2). El mercado de cada producto puede darse solo si puede desarrollarse con éxito el producto (acabado final). Sin embargo, podría darse la posibilidad de no desarrollarlos con éxito y venir con imperfecciones o en el peor de los casos resultar inadecuado y no se pueda vender dicho producto.
+
+La ganancia o beneficio por unidad puede ser de `$1'000.000` si se vende el sensor de temperatura o de `$400.000` si se vende el sensor de presión. Ambos beneficios son netos (*traen los costos incluidos de fabricación*), sin embargo deben asumir un costo adicional de desarrollo (tecnología) por producto, que serán de `$100.000` para el sensor de temperatura y de `$10.000` para el sensor de presión respectivamente. La empresa también puede inclinarse por no fabricar ninguno de los dos productos, por lo que su beneficio simplemente en esa situación será de cero (0). 
+
+**a.** Usted como integrante del grupo de trabajo, ¿Que opción le recomienda a la empresa y por qué? justifique.
+
+**b.** Si el gerente de la empresa tiene una función de aversión al riesgo y esta puede simularse de esta forma $U(x)=\sqrt{x}$. Se mantiene el resultado de la parte (a.) o cambia?. Sustente
+    
+**2.** Piense que un amigo le hace la siguiente oferta: *Usted* le paga a esa persona `$9000` por lanzar un dado. Si el dado cae 3,4,5 o 6, entonces esa persona te pagará `$15000`, pero si cae 1 o 2 no te paga nada y pierde los `$9000`. Además, tu amigo estará de acuerdo en repetir el juego cuantas veces usted lo desee. Siempre que al lanzar nuevamente le toque pagar el valor por lanzar el dado.}
+
+**a.** ¿Acepta usted esa apuesta? si, no? por qué? 
+
+**b.** Plantee una situación similar donde usted sea un apostador(a), ¿que condiciones establecería? ¿que pagos estaría a ofrecer?
+
+**3.** Sean los siguientes gráficos:
+
+```{r}
+#| echo: false
+#| out-width: 110% 
+library(knitr)
+knitr::include_graphics("graphics/gp1.png")
+```
+
+```{r}
+#| echo: false
+#| out-width: 110% 
+library(knitr)
+knitr::include_graphics("graphics/gp2.png")
+```
+
+```{r}
+#| echo: false
+#| out-width: 90% 
+library(knitr)
+knitr::include_graphics("graphics/gp3.png")
+```
+
+**a.** Cuál es la forma representativa de cada una de esas situaciones?
+
+**b.** Describa cual es el equilibrio o posible resultado de cada caso.
+
+**4.** Plantee un caso/ejemplo de una segmentación de mercado en Colombia. Mencione las ventajas de que ese mercado posea o contenga dichas características.
