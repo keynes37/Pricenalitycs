@@ -1,0 +1,25 @@
+---
+title: "Análisis de precios"
+subtitle: "Maestría en Mercadeo"
+format:
+  revealjs: 
+    theme: [league, mio.scss]
+author:
+  - name: Carlos Andrés Yanes
+    email: cayanes@uninorte.edu.co
+    affiliations: Universidad del Norte
+from: markdown+emoji
+---
+
+## Semana 3
+
+::: incremental
+-   Como vamos?
+-   Preguntas de la clase anterior? :grimacing:
+-   Recordeis de lo visto
+:::
+
+::: {layout="[-5,6]" layout-valign="bottom"}
+![](graphs/pic2clas1.png)
+:::
+
