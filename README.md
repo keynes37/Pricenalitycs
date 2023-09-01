@@ -8,4 +8,6 @@ Un curso para la Maestría en Mercadeo de la Universidad del Norte en la ciudad 
 
 2. Clase [Segmentacion](https://raw.githack.com/keynes37/Pricenalitycs/main/Class/ClaseP2.html)
 
+3. Clase [Análisis de componentes](https://raw.githack.com/keynes37/Pricenalitycs/main/Class/ClaseP3.html)
+
 ### Asignaciones
