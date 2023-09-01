@@ -62,3 +62,13 @@ $orange: #f6870f;
 .pseudocode-small {
   font-size: 20px;
 }
+
+.bullet-list {
+  font-size: 16px;  // Fuente pequeña
+  line-height: 1.5; // Espacio entre líneas
+  
+  li {
+    margin-bottom: 5px; // Espacio entre elementos de la lista
+    list-style: disc;   // Utilizar bullet points
+  }
+}

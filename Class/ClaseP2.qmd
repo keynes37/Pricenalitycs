@@ -68,7 +68,7 @@ Todos los individuos toman decisiones cada día. Sin embargo, no siempre es clar
 
 ## Vamos por partes...
 
-:::{.fragment}
+::: fragment
 ![](graphs/Nc2p2.png)
 :::
 
@@ -342,153 +342,147 @@ flowchart LR
 
 ## Sesion Sabado
 
-:::{.incremental}
-- Mirar el trabajo solicitado
-- Aprender sobre compras
-- Discutir un par de temas adicionales
+::: incremental
+-   Mirar el trabajo solicitado
+-   Aprender sobre compras
+-   Discutir un par de temas adicionales
 :::
 
 ## Retos de los Analistas de Mercado
 
-:::{.incremental}
-
-- Costosos
-- Difícil(es) de encontrar
-- No siempre están actualizados
-- No siempre están interesados en el negocio
-- Inexperiencia 
-- Riesgo Moral
-
+::: incremental
+-   Costosos
+-   Difícil(es) de encontrar
+-   No siempre están actualizados
+-   No siempre están interesados en el negocio
+-   Inexperiencia
+-   Riesgo Moral
 :::
 
 ## Retos del analista
 
-:::{.incremental}
-- ¿La analítica toma o justifica las decisiones?
-- ¿Entorno de alta o baja confianza? ¿Tolerancia a la incertidumbre?
-- ¿Se recompensa o se dispara a los mensajeros?
-- ¿Los datos están disponibles e integrados?
-- ¿Los equipos trabajan juntos o compiten?
+::: incremental
+-   ¿La analítica toma o justifica las decisiones?
+-   ¿Entorno de alta o baja confianza? ¿Tolerancia a la incertidumbre?
+-   ¿Se recompensa o se dispara a los mensajeros?
+-   ¿Los datos están disponibles e integrados?
+-   ¿Los equipos trabajan juntos o compiten?
 :::
 
 ## Ejemplos de la buena organización en analitica
 
 ### Algunos Principios
 
-:::{.incremental}
-- El equipo central regula los datos, los archivos, las normas y las herramientas.
-- La división de analistas no centrales colaboran con los ejecutivos.
-- Las trayectorias profesionales analíticas están bien establecidas
-- Las [decisiones]{.redder} deben ser cuidadosas sobretodo con el alojamiento y la externalización de los datos que se usan.
+::: incremental
+-   El equipo central regula los datos, los archivos, las normas y las herramientas.
+-   La división de analistas no centrales colaboran con los ejecutivos.
+-   Las trayectorias profesionales analíticas están bien establecidas
+-   Las [decisiones]{.redder} deben ser cuidadosas sobretodo con el alojamiento y la externalización de los datos que se usan.
 :::
 
 ## Ejemplos de la buena organización en analitica
 
 ### Evaluando una data comercial
 
-:::{.incremental}
-- [Utilidad]{.oranger}: ¿Qué impacto tiene poseerla?
-- [Frecuencia]{.oranger}: Compras > Inventarios
-- [Fiabilidad]{.oranger}: ¿Se puede verificar?
-- [Privacidad]{.oranger}: ¿Es legal? ¿Se opondrán los clientes?
-- ¿Será su uso noticia?
-- [Tamaño]{.oranger}: ¿Muestra o población?
-- [Costo]{.oranger}: ¿Es proporcional al mantenimiento? ¿Se puede actualizar?
+::: incremental
+-   [Utilidad]{.oranger}: ¿Qué impacto tiene poseerla?
+-   [Frecuencia]{.oranger}: Compras \> Inventarios
+-   [Fiabilidad]{.oranger}: ¿Se puede verificar?
+-   [Privacidad]{.oranger}: ¿Es legal? ¿Se opondrán los clientes?
+-   ¿Será su uso noticia?
+-   [Tamaño]{.oranger}: ¿Muestra o población?
+-   [Costo]{.oranger}: ¿Es proporcional al mantenimiento? ¿Se puede actualizar?
 :::
 
 ## Pruebas que podemos realizar
 
-:::: {.columns}
-
+::: columns
 ::: {.column width="35%"}
-- Testeo de medias
-- Análisis de cestas
-- Modelo de competencia
-- Analisis conjunto
-- Publicidad cooperativa
+-   Testeo de medias
+-   Análisis de cestas
+-   Modelo de competencia
+-   Analisis conjunto
+-   Publicidad cooperativa
 :::
 
 ::: {.column width="35%"}
-- Segmentación de compradores
-- Dashboard (BI, Tableu)
-- Modelo de Demanda
-- Marketing Directo
-- Investigación de mercado
-- Visualización de mercado
+-   Segmentación de compradores
+-   Dashboard (BI, Tableu)
+-   Modelo de Demanda
+-   Marketing Directo
+-   Investigación de mercado
+-   Visualización de mercado
 :::
 
 ::: {.column width="30%"}
-- Optimización Precio/promoción
-- Remarketing
-- Tendencias
-- Targeting
-- Personalización
-- Retención de consumidor
+-   Optimización Precio/promoción
+-   Remarketing
+-   Tendencias
+-   Targeting
+-   Personalización
+-   Retención de consumidor
 :::
-
-::::
+:::
 
 # Hablemos de Segmentación
 
 ## Segmento
 
-:::{.fragment}
+::: fragment
 Una forma elegante de decir que los [consumidores]{.cupp} difieren, por ejemplo de:
 :::
 
-:::{.fragment}
-:::{.incremental}
-- [Necesidades del producto]{.blur}: intensidad de uso, frecuencia, contexto; fidelidad.
-- Demografía
-- [Psicográficos]{.blur}: orientación al arte, estatus, religión, familia, etc.
-- Ubicación, Experiencia, Información, Actitudes
+::: fragment
+::: incremental
+-   [Necesidades del producto]{.blur}: intensidad de uso, frecuencia, contexto; fidelidad.
+-   Demografía
+-   [Psicográficos]{.blur}: orientación al arte, estatus, religión, familia, etc.
+-   Ubicación, Experiencia, Información, Actitudes
 :::
 :::
 
-:::{.fragment}
+::: fragment
 Las [diferencias]{.redder} suelen predecir las compras, el consumo, el uso, la satisfacción, la retención, etc.
 :::
 
-## Segmento de bebidas 
+## Segmento de bebidas
 
-![](graphs/bebs.jpeg){.absolute top=200 left=0 width="350" height="300"}
+![](graphs/bebs.jpeg){.absolute top="200" left="0" width="350" height="300"}
 
-![](graphs/hatsu.jpeg){.absolute top=50 right=50 width="450" height="250"}
+![](graphs/hatsu.jpeg){.absolute top="50" right="50" width="450" height="250"}
 
-![](graphs/invgh.png){.absolute bottom=0 right=50 width="600" height="300"}
+![](graphs/invgh.png){.absolute bottom="0" right="50" width="600" height="300"}
 
 ## Segmentación de mercado {.smaller}
 
-:::{.fragment}
+::: fragment
 [Segmentos]{.oranger}: grupos de clientes distintos con atributos similares dentro de un segmento, atributos distintos entre segmentos
 :::
 
-:::{.fragment}
-- Fundamental desde los años 60's
-- Existen numerosas técnicas de segmentación; hay importantes mejoras recientes
-- Los perfiles de respuesta del cliente incorporan segmentos
-- Segmentos B2B: necesidades del cliente, tamaño, rentabilidad, estructura interna
+::: fragment
+-   Fundamental desde los años 60's
+-   Existen numerosas técnicas de segmentación; hay importantes mejoras recientes
+-   Los perfiles de respuesta del cliente incorporan segmentos
+-   Segmentos B2B: necesidades del cliente, tamaño, rentabilidad, estructura interna
 :::
 
-:::{.fragment}
+::: fragment
 [Factores de decisión]{.oranger}: atributos del producto, extensiones, agrupación, envasado; orientación de la publicidad, contenido, medios de comunicación; discriminación de precios, descuentos; redes sociales, programas de [fidelización]{.redder}
 :::
 
-:::{.fragment}
+::: fragment
 Los [segmentos]{.cupp} deben ser relevantes para los objetivos de la empresa, identificables y sustanciales.
 :::
 
 ## Ejemplo
 
-![](graphs/C2pic21.png){.absolute top=200 left=0 width="450" height="300"}
+![](graphs/C2pic21.png){.absolute top="200" left="0" width="450" height="300"}
 
-![](graphs/C2pic22.png){.absolute top=50 right=50 width="450" height="350"}
-
+![](graphs/C2pic22.png){.absolute top="50" right="50" width="450" height="350"}
 
 ## Es la segmentación por género sexista?
 
-:::: {.columns}
-
+::: columns
 ::: {.column width="50%"}
 ![](graphs/Pistol1.webp)
 :::
@@ -496,19 +490,15 @@ Los [segmentos]{.cupp} deben ser relevantes para los objetivos de la empresa, id
 ::: {.column width="50%"}
 ![](graphs/barbies.webp)
 :::
-
-::::
-
+:::
 
 ## Observe esto {.smaller}
 
-![](graphs/paper.png)
-- Acceso en [The pink Tax](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3882214) Moshary et al., (2018).
+![](graphs/paper.png) - Acceso en [The pink Tax](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3882214) Moshary et al., (2018).
 
 ## Segmentación (?)
 
-:::: {.columns}
-
+::: columns
 ::: {.column width="50%"}
 ![](graphs/edati.png)
 :::
@@ -516,16 +506,13 @@ Los [segmentos]{.cupp} deben ser relevantes para los objetivos de la empresa, id
 ::: {.column width="50%"}
 ![](graphs/tin.png)
 :::
-
-::::
-
-
+:::
 
 # Segmentación en acción
 
-- Como se hace? Quien lo hace?
-- Usuarios de navegadores
-- Por qué se hace oculto
+-   Como se hace? Quien lo hace?
+-   Usuarios de navegadores
+-   Por qué se hace oculto
 
 ## Quien lo hace?
 
@@ -541,147 +528,144 @@ Los [segmentos]{.cupp} deben ser relevantes para los objetivos de la empresa, id
 
 # Hagalo usted mismo/a
 
-- Ingrese al sitio web de:[link firefox](https://blog.mozilla.org/ux/2013/08/firefox-user-types-in-north-america/)
-- Discuta primero con quien se identifica
-- ¿Qué hay de importante?
+-   Ingrese al sitio web de:[link firefox](https://blog.mozilla.org/ux/2013/08/firefox-user-types-in-north-america/)
+-   Discuta primero con quien se identifica
+-   ¿Qué hay de importante?
 
 # Segmentación en tecnica
 
 ## Las empresas no hacen públicos los segmentos
 
-:::{.fragment}
-- [Ejemplo 1]{.blur}: "Abastecemos nuestras tiendas con lo que nos gusta, aprovechando nuestro interés -y el de nuestros clientes- por el arte contemporáneo, la música y la moda..
+::: fragment
+-   [Ejemplo 1]{.blur}: "Abastecemos nuestras tiendas con lo que nos gusta, aprovechando nuestro interés -y el de nuestros clientes- por el arte contemporáneo, la música y la moda..
 :::
 
-:::{.fragment}
-- [Ejemplo 2]{.blur}: Ofrecemos una experiencia de compra específica para el estilo de vida de una persona educada y de mentalidad urbana de entre los 18 y 30 años de edad..."
+::: fragment
+-   [Ejemplo 2]{.blur}: Ofrecemos una experiencia de compra específica para el estilo de vida de una persona educada y de mentalidad urbana de entre los 18 y 30 años de edad..."
 :::
 
-:::{.fragment}
-- [Ejemplo 3]{.blur}: Nuestro cliente está muy implicado en el comportamiento de apareamiento y citas... uno de los principales motores de su comportamiento de gasto... se esfuerza por posponer la edad adulta... ''
+::: fragment
+-   [Ejemplo 3]{.blur}: Nuestro cliente está muy implicado en el comportamiento de apareamiento y citas... uno de los principales motores de su comportamiento de gasto... se esfuerza por posponer la edad adulta... ''
 :::
 
 ## Un ejemplo en investigación
 
 ### Caso de promoción
 
-- Para cualquier descuento de [precio]{.cupp} < margen de contribución, dar un cupón a...
+-   Para cualquier descuento de [precio]{.cupp} \< margen de contribución, dar un cupón a...
 
-    - Nuestro cliente fiel a la marca reduce directamente el beneficio
+    -   Nuestro cliente fiel a la marca reduce directamente el beneficio
 
-    - Un cliente marginal puede aumentar el beneficio
+    -   Un cliente marginal puede aumentar el beneficio
 
-    - Un cliente fiel a otra marca no modifica el beneficio.
+    -   Un cliente fiel a otra marca no modifica el beneficio.
 
-:::{.fragment}
+::: fragment
 Por tanto, el reto del [modelo de demanda]{.oranger} es identificar correctamente a los [clientes marginales]{.redder} sin identificar accidentalmente al cliente fiel a nuestra marca.
 :::
 
 ## Conjuntos de información
 
-- [Datos demográficos básicos]{.reder}: 
+-   [Datos demográficos básicos]{.reder}:
 
-    - Ingresos, Tamaño de la familia, Jubilado, Desempleado, Madre soltera.
+    -   Ingresos, Tamaño de la familia, Jubilado, Desempleado, Madre soltera.
 
-- [Datos demográficos adicionales]{.reder}: 
+-   [Datos demográficos adicionales]{.reder}:
 
     -Edad, Secundaria, Universidad, Cuello blanco, N° Hijos, Casado, N° Perros, N° Gatos, Inquilino, N° TVs
 
-- [Historial de compras]{.oranger}: 
+-   [Historial de compras]{.oranger}:
 
-    - Cuotas de compra de marcas, recuentos de compras de marcas, cuota de descuentos, cuota de características, cuota de expositores, N° marcas compradas, gasto total
+    -   Cuotas de compra de marcas, recuentos de compras de marcas, cuota de descuentos, cuota de características, cuota de expositores, N° marcas compradas, gasto total
 
-## Modelo de demanda 
+## Modelo de demanda
 
-:::{.fragment}
-::: {.callout-note}
+::: fragment
+::: callout-note
 ## Función de demanda
+
 $$Q(X)=Gustos,\;Ingreso,\;Precios,\;Edad,\cdots$$
 :::
 :::
 
-:::{.fragment}
-::: {.callout-important}
+::: fragment
+::: callout-important
 ## Modelo
+
 $$\color{#9370DB}{Demanda_i} = \beta_0 + \beta_1~\color{#FF0000
 }{Precios_i} + \varepsilon_i$$
 :::
 :::
 
-
 ## De los modelos
 
-:::{.incremental}
-- Para predecir el **comportamiento**, utilice el comportamiento pasado
+::: incremental
+-   Para predecir el **comportamiento**, utilice el comportamiento pasado
 
-- La teoría económica puede ayudar a que los modelos de demanda funcionen bien con datos de comportamiento limitados
+-   La teoría económica puede ayudar a que los modelos de demanda funcionen bien con datos de comportamiento limitados
 
-- El rendimiento del Machine Learning depende críticamente de la calidad del predictor
+-   El rendimiento del Machine Learning depende críticamente de la calidad del predictor
 
-- Rendimiento estadístico ≠ rendimiento económico
+-   Rendimiento estadístico ≠ rendimiento económico
 
-- Construiremos modelos logit con datos de compra en las siguientes semanas
+-   Construiremos modelos logit con datos de compra en las siguientes semanas
 :::
 
 # Preguntas
 
-1. Mencione algunos atributos que debe tener una buena segmentación de mercado?
+1.  Mencione algunos atributos que debe tener una buena segmentación de mercado?
 
-2. Supongamos que segmentamos el mercado de smartphones en función de la marca deseada por cada cliente. [¿Es éste un buen enfoque?]{.reder}
+2.  Supongamos que segmentamos el mercado de smartphones en función de la marca deseada por cada cliente. [¿Es éste un buen enfoque?]{.reder}
 
 ## Respuesta
 
-:::{.fragment}
-`r fa("bell", fill="red")` ¿Cómo elegir los atributos?,
-Queremos [segmentar]{.cupp} en función de atributos que impulsen las ventas, los beneficios y la retención. ¿Pero cómo?
+::: fragment
+`r fa("bell", fill="red")` ¿Cómo elegir los atributos?, Queremos [segmentar]{.cupp} en función de atributos que impulsen las ventas, los beneficios y la retención. ¿Pero cómo?
 :::
 
-:::{.fragment} 
-1. Teoría
-2. Estudio de mercado
-3. Base de datos de clientes
-4. Consultar a expertos en clientes (vendedores)
-5. Averiguar qué hacen otras empresas
-6. Dejar que los datos de ventas elijan por nosotros
+::: fragment
+1.  Teoría
+2.  Estudio de mercado
+3.  Base de datos de clientes
+4.  Consultar a expertos en clientes (vendedores)
+5.  Averiguar qué hacen otras empresas
+6.  Dejar que los datos de ventas elijan por nosotros
 :::
-
 
 ## Otra forma de segmentar
 
-En esta parte se hará explicación de uno de los primeros algoritmos de _clasificación_ denominado **vecino cercano**. Información adicional de referencia teórica puede encontrar en Samet (2007).
+En esta parte se hará explicación de uno de los primeros algoritmos de *clasificación* denominado **vecino cercano**. Información adicional de referencia teórica puede encontrar en Samet (2007).
 
 Este algoritmo, es denominado **algoritmo perezoso** pero eso no es tan malo del todo, ni es el peor de la familia de algoritmos de clasificación, por el contrario, es de fácil implementación y tiene unas consideraciones, que cualquiera puede optar por usar.
 
-## K-means 
+## K-means
 
 Para clasificar, siempre se tienen premisas, entre esas:
 
-- Cosas que suelen ser **parecidas** tienen cosas en la cual pueden ser _similares_.
+-   Cosas que suelen ser **parecidas** tienen cosas en la cual pueden ser *similares*.
 
->Blanco es, gallina lo pone y frito se come
+> Blanco es, gallina lo pone y frito se come
 
-* Tiene varias ventajas
-  - Simple y es altamente efectivo
-  - No requiere de distribución alguna
-  - Su entrenamiento en fase es sencillo
+-   Tiene varias ventajas
+    -   Simple y es altamente efectivo
+    -   No requiere de distribución alguna
+    -   Su entrenamiento en fase es sencillo
 
 ## K-means
 
-- También tiene desventajas
-  - No produce un **modelo** (no hay relación entre variables)
-  - Requiere de una selección optima de **K**
-  - Tiene fase lenta de clasificación
-  - Si tiene nominales y missing values se requieren procesos adicionales
-  
+-   También tiene desventajas
+    -   No produce un **modelo** (no hay relación entre variables)
+    -   Requiere de una selección optima de **K**
+    -   Tiene fase lenta de clasificación
+    -   Si tiene nominales y missing values se requieren procesos adicionales
+
 ## Lo que hace
 
-La idea parte en casos que no son "clasificados", lo sean a partir de su vecino mas cercano. Se hace a partir de la **Fase de entrenamiento**, que debe poseer elementos ya clasificados previamente. Aquellos casos que sean mas difíciles de clasificar se van a ir a la _categoría_ con mas vecinos.
+La idea parte en casos que no son "clasificados", lo sean a partir de su vecino mas cercano. Se hace a partir de la **Fase de entrenamiento**, que debe poseer elementos ya clasificados previamente. Aquellos casos que sean mas difíciles de clasificar se van a ir a la *categoría* con mas vecinos.
 
 ## Un ejemplo simple
 
-Suponga que se toma a un individuo $i \in \{1,2,3,\dots, n  \}$ y se le hace una propuesta que de pruebe un alimento novedoso y se le pide que lo clasifique. Antes de eso ya se tiene una _base_ que tiene una previa clasificación y que lo tiene como:
-`Crujiente (1 a 10) <-> Dulce (1 a 10)` 
-La definición será tomarlo como: _fruta, vegetal o proteína_. 
+Suponga que se toma a un individuo $i \in \{1,2,3,\dots, n \}$ y se le hace una propuesta que de pruebe un alimento novedoso y se le pide que lo clasifique. Antes de eso ya se tiene una *base* que tiene una previa clasificación y que lo tiene como: `Crujiente (1 a 10) <-> Dulce (1 a 10)` La definición será tomarlo como: *fruta, vegetal o proteína*.
 
 ```{r, echo=FALSE}
 library(pacman)
@@ -707,51 +691,48 @@ Según Gallego(2017), podría uno establecer un tipo de gráfico de la forma:
 ```{r gra1, echo=FALSE, out.width='75%', fig.align='center'}
 knitr::include_graphics("graphs/g1.png")
 ```
-De lo anterior, **¿existe algún patrón?**. Si le dijera que tenemos un _tomate_, como lo clasificaría? Fruta o vegetal?
 
-## La idea 
+De lo anterior, **¿existe algún patrón?**. Si le dijera que tenemos un *tomate*, como lo clasificaría? Fruta o vegetal?
+
+## La idea
 
 Para tener vecinos, hay que tener un indicador o medida para eso. Uno recursivo puede ser la distancia euclídeana.
 
-$$dist (p,q) = \sqrt{ \sum_{i=1}^{m}(p_{i}-q_{i})^{2}}$$
-Donde $p$ y $q$ son vectores de m-dimensiones. Para ser un poco mas claros, intentemos lo del _tomate_.
+$$dist (p,q) = \sqrt{ \sum_{i=1}^{m}(p_{i}-q_{i})^{2}}$$ Donde $p$ y $q$ son vectores de m-dimensiones. Para ser un poco mas claros, intentemos lo del *tomate*.
 
 ## Tabla
 
 | Variable   | Dulzura | Crocancia | Clasificación | Distancia                         |
-|------------|---------|-----------|---------------|-----------------------------------|
-| Uvas        | 8       | 5         | Fruta         | $\sqrt{(6-8)^{2}+(4-5)^{2}}=2.23$ |
+|------------|------------|------------|------------|------------------------|
+| Uvas       | 8       | 5         | Fruta         | $\sqrt{(6-8)^{2}+(4-5)^{2}}=2.23$ |
 | Naranja    | 7       | 3         | Fruta         | $\sqrt{(6-7)^{2}+(4-3)^{2}}=1.41$ |
 | Habichuela | 3       | 7         | Vegetal       | $\sqrt{(6-3)^{2}+(4-7)^{2}}=4.24$ |
 | Nueces     | 3       | 8         | Proteína      | $\sqrt{(6-3)^{2}+(4-8)^{2}}=5.00$ |
 
 ## Adicional
 
-De acuerdo a lo anterior, entonces el _tomate_ es una _fruta_ ya que su vecino mas cercano $K=1$ es la naranja. Si ampliamos el espectro a $K=2$ tendría dos vecinos y estas son la uva y la naranja respectivamente.
+De acuerdo a lo anterior, entonces el *tomate* es una *fruta* ya que su vecino mas cercano $K=1$ es la naranja. Si ampliamos el espectro a $K=2$ tendría dos vecinos y estas son la uva y la naranja respectivamente.
 
 `r fa("bell", fill="red")` [Elección de K]{.reder}
 
-La letra $K$ viene a ser el número optimo de vecinos y _he aquí_ uno de los principales retos. Seleccionar optimamente el número de vecinos apropiados para realizar una correcta **clasificación** es toda una tarea.
+La letra $K$ viene a ser el número optimo de vecinos y *he aquí* uno de los principales retos. Seleccionar optimamente el número de vecinos apropiados para realizar una correcta **clasificación** es toda una tarea.
 
 ## Frente a eso {.smaller}
 
-- Es consecuentemente lo mas crucial
-- Existe un "trade-off" entre **sesgo** y **varianza**
-- Un $K$ mayor es menor varianza pero mas sesgo al ignorar pequeños patrones.
-- Si $K$ es menor o pequeño hay mas sesgo pero y si hay un problema clasificación previa, todo seria peor.
-- No hay mecanismo idóneo, pero una idea puede rondar con $k=\sqrt{n}$.
-- Si tenemos 25 observaciones, entonces $k=5$.
-- Igual, hay que tener mucho cuidado y lo mejor es hacer varios entrenamientos.
-- Otra opción es votación ponderada.
+-   Es consecuentemente lo mas crucial
+-   Existe un "trade-off" entre **sesgo** y **varianza**
+-   Un $K$ mayor es menor varianza pero mas sesgo al ignorar pequeños patrones.
+-   Si $K$ es menor o pequeño hay mas sesgo pero y si hay un problema clasificación previa, todo seria peor.
+-   No hay mecanismo idóneo, pero una idea puede rondar con $k=\sqrt{n}$.
+-   Si tenemos 25 observaciones, entonces $k=5$.
+-   Igual, hay que tener mucho cuidado y lo mejor es hacer varios entrenamientos.
+-   Otra opción es votación ponderada.
 
 ## Objetivo
 
 Hacer uso del algoritmo de clasificación **K-nearest**:
 
-- Cargar o importar datos
-- Conocer los datos
-- Implementar el algoritmo
-- Evaluar resultados
-
-
-
+-   Cargar o importar datos
+-   Conocer los datos
+-   Implementar el algoritmo
+-   Evaluar resultados

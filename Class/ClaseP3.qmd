@@ -3,7 +3,8 @@ title: "Análisis de precios"
 subtitle: "Maestría en Mercadeo"
 format:
   revealjs: 
-    theme: [league, mio.scss]
+    theme: [simple, mio.scss]
+    css: pacmanem.css
 author:
   - name: Carlos Andrés Yanes
     email: cayanes@uninorte.edu.co
@@ -16,10 +17,724 @@ from: markdown+emoji
 ::: incremental
 -   Como vamos?
 -   Preguntas de la clase anterior? :grimacing:
--   Recordeis de lo visto
+-   Empezaremos con **Python** para caso de segmentación
+-   Introducimos una técnica adicionales (PCA)
+-   Hablaremos de la disponibilidad a pagar
+-   Miraremos el primer set de precios
 :::
 
 ::: {layout="[-5,6]" layout-valign="bottom"}
 ![](graphs/pic2clas1.png)
 :::
 
+## Estrategia de Marketing
+
+:::{.incremental}
+- [Segmentación]{.reder} Como difiere un comprador
+- [Targeting]{.blur} Que segmento puede ser fichado
+- Posicionamiento <br/>
+<ul class="bullet-list">
+  <li>Donde estamos?</li>
+  <li>Cuantos consumidores perciben la marca</li>
+  <li>Cuál es nuestra propuesta de valor</li>
+  <li>Como queremos marcar la percepción del consumidor</li>
+</ul>
+- Mapear el [mercado]{.alert} no ayuda a [posicionar]{.under}
+:::
+
+## Estrategia de Marketing{.smaller}
+
+:::{.fragment}
+Los [mapas]{.reder} de mercado utilizan los [datos]{.cupp} de los clientes para describir la situación de la competencia. ¿Por qué?
+:::
+
+:::{.fragment}
+- Permiten comprender la posición de la marca o el producto en el mercado
+- Se hace seguimiento a los cambios
+- Identifican nuevos productos o características a desarrollar
+- Ayudan a comprender las decisiones de imitación/diferenciación de la competencia
+- Permiten evaluar los resultados de tácticas recientes
+- Se logra identificar a las ventas cruzadas, publicidad, complementos o sustitutos, servicios de paquetes
+:::  
+
+## Dentro del mapa de mercado
+### Diferenciación vertical (1)
+
+:::{.incremental}
+- Atributos del [producto]{.alert} en los que más es mejor, todo lo demás permanece constante
+- [Eficacia]{.oranger}, por ejemplo, velocidad o potencia de la CPU
+- [Eficiencia]{.oranger}, por ejemplo, consumo de energía
+- Buena [calidad]{.oranger} del insumo (por ejemplo, ropa, alimentos)
+- Importante :warning: : no todo el mundo compra la mejor opción ¿por qué no?
+:::
+
+## Dentro del mapa de mercado
+### Diferenciación horizontal (2)
+
+:::{.incremental}
+- Atributos del producto con [valoraciones]{.alert} heterogéneas
+- Ubicación física
+- Familiaridad, por ejemplo, con lo que se ha crecido
+- Sabor, por ejemplo: [dulzor]{.cupp} o salado
+- [Imagen de marca]{.reder}, por ejemplo: Kola Roman, Productos Postobon, Coca-Cola
+- Complementos, por ejemplo, auriculares o cables de carga
+:::
+
+# Ejemplo visual :grinning:
+
+## Ejemplo:
+
+:::{.fragment}
+::: {.callout-note}
+El modelo de localización, propuesto por Harold Hotelling en 1929, es un concepto en la teoría económica que analiza la [ubicación estratégica]{.oranger} de dos o más competidores en un mercado. Este modelo se utiliza para entender cómo las empresas toman decisiones de ubicación para maximizar sus beneficios y cómo estas decisiones afectan la competencia en el mercado.
+:::
+:::
+
+## Ejemplo:
+
+![](graphs/P1clas03.png)
+## Teorema del votante mediano
+
+![](graphs/Votante.png)
+
+
+
+## Estrategia de análisis de PCA (Componentes Principales)
+
+:::{.fragment}
+:::{.callout-important}
+## Definición PCA
+Es una técnica estadística y matemática utilizada para reducir la [dimensionalidad]{.reder} de un conjunto de datos multidimensionales, al mismo tiempo que conserva la mayor cantidad posible de información relevante contenida en esos datos. 
+:::
+:::
+
+:::{.fragment}
+<ul class="bullet-list">
+  <li>Identifica Patrones</li>
+  <li>Simplifica los datos</li>
+  <li>Brinda pesos específicos importantes</li>
+  <li>Anda y habla con las covarianzas</li>
+</ul>
+:::
+
+## PCA en acción
+
+### Tome como referencia
+
+:::: {.columns}
+::: {.column width="70%"}
+:::{.fragment}
+![](graphs/pos1.png)
+:::
+:::
+::: {.column width="30%"}
+:::{.incremental}
+- Tenemos clones
+- Busca lo mas mínimo
+- [Alguien tiene virus]{.bg style="--col: #FFFF00"}
+:::
+:::
+::::
+
+## PCA en acción
+
+### Tome como referencia
+
+:::: {.columns}
+::: {.column width="70%"}
+:::{.fragment}
+![](graphs/pos2.png)
+:::
+:::
+::: {.column width="30%"}
+:::{.incremental}
+- Tiene gafas
+- Usa tapabocas
+- Ya hay diferencias
+:::
+:::
+::::
+
+## PCA en acción
+
+### Tome como referencia
+
+:::: {.columns}
+::: {.column width="50%"}
+:::{.fragment}
+![](graphs/cubo.png)
+:::
+:::
+::: {.column width="50%"}
+:::{.incremental}
+- Ya es una lógica mas completa
+- Tres (3) Variables
+- $PCA=x+y+z$
+- $PCA= Edad+Dispositivos+Tamaño$
+:::
+:::
+::::
+
+## El asunto del PCA
+
+:::{.fragment .fade-up}
+:::{.callout-tip}
+## Enfoque 1
+- Tenemos una ecuación que:
+$$0.3\;Edad+10.8\;Dispositivos+5.6\;Tamaño$$
+:::
+:::
+
+:::{.fragment}
+:::{.callout-important}
+## Enfoque 2
+- Puede variar el peso y encontrar otro
+$$110\;Edad+0.3\;Dispositivos+600\;Tamaño$$
+:::
+:::
+
+## El asunto del PCA
+
+### Número optimo de Componentes
+
+:::: {.columns}
+::: {.column width="50%"}
+:::{.fragment}
+- Ejemplo 1 :hand_over_mouth:
+- Si tiene 10 muestras y 40 atributos
+- Entonces posiblemente tendremos [10]{.under} PC
+:::
+:::
+
+::: {.column width="50%"}
+:::{.fragment}
+- Ejemplo 2 :hand:
+- Si tiene 100 muestras y 40 atributos
+- Entonces tendrá [40]{.under} [PC]{.oranger} 
+:::
+:::
+::::
+
+## El asunto del PCA
+
+:::{.fragment .fade-up}
+- La dimensionalidad siempre va ser menor o reducida. Nunca habrá demasiados PCA's en la medida que tenga demasiada [muestra]{.alert}
+:::
+
+:::{.fragment .fade-up}
+- El [PCA1]{.under} regularmente es el que mas explica la varianción de la muestra.
+:::
+
+:::{.fragment .fade-up}
+- El [PCA2]{.under} es aquel que en un [segundo lugar]{.reder} explica la varianción de la muestra.
+:::
+
+## El asunto del PCA
+
+:::{.fragment}
+![](graphs/keep1.png){.absolute top="200" left="0"}
+:::
+
+:::{.fragment}
+![](graphs/keep2.png){.absolute top="50" right="50"}
+:::
+
+:::{.fragment}
+![](graphs/keep3.png){.absolute bottom="0" right="50"}
+:::
+
+# Vamos a Python!!
+
+## Consideraciones adicionales
+### Regresemos con lo conceptual
+
+# Disponibilidad a Pagar
+
+## Disposicion a pagar
+
+```{r Setup, include = F}
+# Kyle raze options and example
+options(htmltools.dir.version = FALSE)
+library(pacman)
+p_load(ggthemes, readxl, viridis, knitr, dslabs, gapminder, extrafont, Ecdat, wooldridge, tidyverse, magrittr, janitor, kableExtra)
+# Define colors
+red_pink <- "#e64173"
+met_slate <- "#272822" # metropolis font color 
+purple <- "#9370DB"
+green <- "#007935"
+light_green <- "#7DBA97"
+orange <- "#FD5F00"
+turquoise <- "#44C1C4"
+# Knitr options
+opts_chunk$set(
+  comment = "#>",
+  fig.align = "center",
+  fig.height = 7,
+  fig.width = 10.5,
+  #dpi = 300,
+  #cache = T,
+  warning = F,
+  message = F
+)  
+theme_simple <- theme_bw() + theme(
+  axis.line = element_line(color = met_slate),
+  panel.grid = element_blank(),
+  rect = element_blank(),
+  strip.text = element_blank(),
+  text = element_text(family = "Fira Sans", color = met_slate, size = 17),
+  axis.text.x = element_text(size = 12),
+  axis.text.y = element_text(size = 12),
+  axis.ticks = element_blank()
+)
+theme_market <- theme_bw() + theme(
+  axis.line = element_line(color = met_slate),
+  panel.grid = element_blank(),
+  rect = element_blank(),
+  strip.text = element_blank(),
+  text = element_text(family = "Fira Sans", color = met_slate, size = 17),
+  axis.title.x = element_text(hjust = 1, size = 17),
+  axis.title.y = element_text(hjust = 1, angle = 0, size = 17),
+  # axis.text.x = element_text(size = 12),
+  # axis.text.y = element_text(size = 12),
+  axis.ticks = element_blank()
+)
+theme_gif <- theme_bw() + theme(
+  axis.line = element_line(color = met_slate),
+  panel.grid = element_blank(),
+  rect = element_blank(),
+  text = element_text(family = "Fira Sans", color = met_slate, size = 17),
+  axis.text.x = element_text(size = 12),
+  axis.text.y = element_text(size = 12),
+  axis.ticks = element_blank()
+)
+wrapper <- function(x, ...) paste(strwrap(x, ...), collapse = "\n")
+# funciones
+demand <- function(x) 10 - x
+demand_2 <- function(x) 9 - x
+demand_3 <- function(x) 8 - x
+demand_inc <- function(x) 11 - x
+demand_dec <- function(x) 5 - x
+supply <- function(x) 1 + (4/5)*x
+step_demand <- data.frame(x = c(0, 1, 2, 3, 4, 5, 6, 7, 8), mv = c(8, 7, 6, 5, 4, 3, 2, 1, 0))
+```
+
+::::{.columns}
+::: {.column width="70%"}
+```{r demanda, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+ggplot(data = data.frame(x = 0), mapping = aes(x = x)) +
+  scale_x_continuous(limits = c(0, 10.5), expand = c(0, 0), breaks = seq(0, 10, 1)) +
+  scale_y_continuous(limits = c(0, 10.5), expand = c(0, 0), breaks = seq(0, 10, 1)) +
+  theme_market +
+  labs(x = "Q", y = "P") +
+  stat_function(fun = demand, color = red_pink, size = 1) +
+  annotate("text", label = "D", x = 10, y = 0.65, color = red_pink, family = "Fira Sans", size = 9)
+```
+[Gráfico de Kyle Raze]{.small}
+:::
+
+::: {.column width="30%"}
+:::{.fragment}
+- La [Demanda]{.alert} dice de la [disposición a pagar]{.cupp}
+- $\Downarrow P \rightarrow Q_d \Uparrow$ 
+:::
+:::
+::::
+
+## Disposicion a ofrecer
+
+::::{.columns}
+::: {.column width="70%"}
+```{r oferta, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+ggplot(data = data.frame(x = 0), mapping = aes(x = x)) +
+  scale_x_continuous(limits = c(0, 10.5), expand = c(0, 0), breaks = seq(0, 10, 1)) +
+  scale_y_continuous(limits = c(0, 10.5), expand = c(0, 0), breaks = seq(0, 10, 1)) +
+  theme_market +
+  labs(x = "Q", y = "P") +
+  stat_function(fun = supply, color = purple, size = 1) + 
+  annotate("text", label = "O", x = 10, y = 9.5, color = purple, family = "Fira Sans", size = 9)
+```
+[Gráfico de Kyle Raze]{.small}
+:::
+
+::: {.column width="30%"}
+- La [Oferta]{.blur} dice de la [disposición a ofrecer]{.cupp}
+- $\Uparrow P \rightarrow Q_s \Uparrow$ 
+:::
+::::
+
+## Equilibrio de mercado
+
+::::{.columns}
+::: {.column width="70%"}
+```{r equilibrio_mark, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+market <- ggplot(data = data.frame(x = 0), mapping = aes(x = x)) +
+  scale_x_continuous(limits = c(0, 10.5), expand = c(0, 0), breaks = seq(0, 10, 1)) +
+  scale_y_continuous(limits = c(0, 10.5), expand = c(0, 0), breaks = seq(0, 10, 1)) +
+  theme_market +
+  labs(x = "Q", y = "P") +
+  stat_function(fun = supply, color = purple, size = 1) + # supply function
+  annotate("text", label = "O", x = 10, y = 9.5, color = purple, family = "Fira Sans", size = 9) + 
+  stat_function(fun = demand, color = red_pink, size = 1) + 
+  annotate("text", label = "D", x = 10, y = 0.65, color = red_pink, family = "Fira Sans", size = 9)
+market
+```
+[Gráfico de Kyle Raze]{.small}
+:::
+
+::: {.column width="30%"}
+- La [Oferta]{.blur} y [Demanda]{.alert} se igualan
+- La $Q_d = Q_s$
+- Por otro lado tendremos [desequilibrio]{.oranger}
+:::
+::::
+
+## Equilibrio de mercado
+
+::::{.columns}
+::: {.column width="70%"}
+```{r equilibrio2, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+market + 
+  geom_point(aes(x = 5, y = 5), color = met_slate, size = 2) +
+  geom_segment(aes(x = 5, y = 0, xend = 5, yend = 5), linetype  = "dashed", color = met_slate, size = 1) + 
+  geom_segment(aes(x = 0, y = 5, xend = 5, yend = 5), linetype  = "dashed", color = met_slate, size = 1)
+```
+[Gráfico de Kyle Raze]{.small}
+:::
+
+::: {.column width="30%"}
+- La [Oferta]{.blur} y [Demanda]{.alert} se igualan
+- La $Q_d = Q_s$
+- Note que [5]{.oranger} son las unidades requeridas
+:::
+::::
+
+## Desequilibrio de mercado
+
+::::{.columns}
+::: {.column width="70%"}
+```{r frade1, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+market + geom_hline(yintercept = 3, linetype  = "dashed", color = met_slate, size = 1) 
+```
+
+:::
+
+::: {.column width="30%"}
+- La [Oferta]{.blur} y [Demanda]{.alert} no son similares
+- La $Q_d \neq Q_s$
+- Ocurre algo como:
+```{r, fig.retina = 4, echo = FALSE}
+include_graphics("graphs/escaso.png")
+```
+:::
+::::
+
+## Desequilibrio de mercado
+
+::::{.columns}
+::: {.column width="70%"}
+```{r frade2, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+market + geom_hline(yintercept = 3, linetype  = "dashed", color = met_slate, size = 1) +
+  geom_segment(aes(x = 7, y = 0, xend = 7, yend = 3), linetype  = "dashed", color = met_slate, size = 1) + 
+  geom_point(aes(x = 7, y = 3), color = met_slate, size = 2) +
+  geom_segment(aes(x = 2.5, y = 0, xend = 2.5, yend = 3), linetype  = "dashed", color = met_slate, size = 1) + 
+  geom_point(aes(x = 2.5, y = 3), color = met_slate, size = 2)
+```
+
+:::
+
+::: {.column width="30%"}
+- La [Oferta]{.blur} y [Demanda]{.alert} no son similares
+- Precios $\Uparrow P$
+- Se ofrecen [3]{.oranger} unidades
+```{r, fig.retina = 4, echo = FALSE}
+include_graphics("graphs/escaso.png")
+```
+:::
+::::
+
+## Desequilibrio de mercado
+
+::::{.columns}
+::: {.column width="70%"}
+```{r supera1, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+market + geom_hline(yintercept = 7, linetype  = "dashed", color = met_slate, size = 1) 
+```
+
+:::
+
+::: {.column width="30%"}
+- La [Oferta]{.blur} y [Demanda]{.alert} no son similares
+- Precios $\Downarrow P$
+- Hay exceso de oferta
+```{r, fig.retina = 4, echo = FALSE}
+include_graphics("graphs/allon.png")
+```
+:::
+::::
+
+## Desequilibrio de mercado
+
+::::{.columns}
+::: {.column width="70%"}
+```{r supera2, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+market + geom_hline(yintercept = 7, linetype  = "dashed", color = met_slate, size = 1) +
+  geom_segment(aes(x = 3, y = 0, xend = 3, yend = 7), linetype  = "dashed", color = met_slate, size = 1) + 
+  geom_point(aes(x = 3, y = 7), color = met_slate, size = 2) +
+  geom_segment(aes(x = 7.5, y = 0, xend = 7.5, yend = 7), linetype  = "dashed", color = met_slate, size = 1) + 
+  geom_point(aes(x = 7.5, y = 7), color = met_slate, size = 2) 
+```
+
+:::
+
+::: {.column width="30%"}
+- La [Oferta]{.blur} y [Demanda]{.alert} no son similares
+- Precios $\Downarrow P$
+- Se ofrecen [7]{.oranger} unidades
+```{r, fig.retina = 4, echo = FALSE}
+include_graphics("graphs/allon.png")
+```
+:::
+::::
+
+# Disposición a pagar {background-color="#006dae"}
+
+## Elementos 
+
+:::{.incremental}
+- Los mercados pueden ajustarse a si mismos.
+- Muchas veces son [intervenidos]{.reder} por el mismo estado
+- El precio sigue siendo la [señal]{.bg style="--col: #00FFFF"} del mercado.
+- Las incidencias tambien tienen que ver con [incentivos]{.oranger}
+:::
+
+## Valoración Marginal
+
+::::{.columns}
+::: {.column width="70%"}
+```{r marginal1, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+ggplot(data = step_demand, mapping = aes(x = x, y = mv)) +
+  geom_step(color = red_pink, size = 1) +
+  labs(x = "q", y = "VM") +
+  scale_x_continuous(limits = c(0, 9.5), expand = c(0, 0), breaks = seq(0, 9, 1)) +
+  scale_y_continuous(limits = c(0, 9.5), expand = c(0, 0), breaks = seq(0, 9, 1)) +
+  theme_market
+```
+
+:::
+
+::: {.column width="30%"}
+- El valor marginal [VM]{.alert}
+- Si $\uparrow Q\rightarrow VM\downarrow$
+- Buscamos que $Q=VM$
+:::
+::::
+
+## Valoración Marginal
+
+::::{.columns}
+::: {.column width="70%"}
+```{r gityu, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+ggplot(data = step_demand, mapping = aes(x = x, y = mv)) +
+  geom_step(color = red_pink, size = 1) +
+  labs(x = "q", y = "VM") +
+  scale_x_continuous(limits = c(0, 9.5), expand = c(0, 0), breaks = seq(0, 9, 1)) +
+  scale_y_continuous(limits = c(0, 9.5), expand = c(0, 0), breaks = seq(0, 9, 1)) +
+  theme_market + 
+  geom_hline(yintercept = 4.5, linetype  = "dashed", color = met_slate, size = 1) 
+```
+
+:::
+
+::: {.column width="30%"}
+- Cuantas unidades debe consumir a $P=4.5$?
+- **R./** 
+:::
+::::
+
+
+## Valoración Marginal
+
+::::{.columns}
+::: {.column width="70%"}
+```{r marginal2, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+ggplot(data = step_demand, mapping = aes(x = x, y = mv)) +
+  geom_step(color = red_pink, size = 1) +
+  labs(x = "q", y = "VM") +
+  scale_x_continuous(limits = c(0, 9.5), expand = c(0, 0), breaks = seq(0, 9, 1)) +
+  scale_y_continuous(limits = c(0, 9.5), expand = c(0, 0), breaks = seq(0, 9, 1)) +
+  theme_market + 
+  geom_hline(yintercept = 4.5, linetype  = "dashed", color = met_slate, size = 1) +
+  geom_segment(aes(x = 4, y = 0, xend = 4, yend = 4.5), linetype  = "dashed", color = met_slate, size = 1) + 
+  geom_point(aes(x = 4, y = 4.5), color = met_slate, size = 2)
+```
+
+:::
+
+::: {.column width="30%"}
+- Cuantas unidades debe consumir a $P=4.5$?
+- **R./** [4]{.alert}
+:::
+::::
+
+## Valoración Marginal
+
+::::{.columns}
+::: {.column width="70%"}
+```{r marginal3, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+ggplot(data = step_demand, mapping = aes(x = x, y = mv)) +
+  geom_step(color = red_pink, size = 1) +
+  labs(x = "q", y = "VM") +
+  scale_x_continuous(limits = c(0, 9.5), expand = c(0, 0), breaks = seq(0, 9, 1)) +
+  scale_y_continuous(limits = c(0, 9.5), expand = c(0, 0), breaks = seq(0, 9, 1)) +
+  theme_market + 
+  geom_hline(yintercept = 3, linetype  = "dashed", color = met_slate, size = 1) 
+```
+
+:::
+
+::: {.column width="30%"}
+- Cuantas unidades debe consumir a $P=3$?
+- **R./** 
+:::
+::::
+
+## Valoración Marginal
+
+::::{.columns}
+::: {.column width="70%"}
+```{r mwithpri, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+ggplot(data = step_demand, mapping = aes(x = x, y = mv)) +
+  geom_step(color = red_pink, size = 1) +
+  labs(x = "q", y = "VM") +
+  scale_x_continuous(limits = c(0, 9.5), expand = c(0, 0), breaks = seq(0, 9, 1)) +
+  scale_y_continuous(limits = c(0, 9.5), expand = c(0, 0), breaks = seq(0, 9, 1)) +
+  theme_market + 
+  geom_hline(yintercept = 3, linetype  = "dashed", color = met_slate, size = 1) +
+  geom_segment(aes(x = 6, y = 0, xend = 6, yend = 3), linetype  = "dashed", color = met_slate, size = 1) + 
+  geom_point(aes(x = 6, y = 3), color = met_slate, size = 2)
+```
+
+:::
+
+::: {.column width="30%"}
+- Cuantas unidades debe consumir a $P=3$?
+- **R./** [6]{.alert}
+:::
+::::
+
+## Valoración Marginal
+
+::::{.columns}
+::: {.column width="70%"}
+```{r anh167ytr, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+ggplot(data = step_demand, mapping = aes(x = x, y = mv)) +
+  geom_step(color = red_pink, size = 1) +
+  labs(x = "q", y = "VM") +
+  scale_x_continuous(limits = c(0, 9.5), expand = c(0, 0), breaks = seq(0, 9, 1)) +
+  scale_y_continuous(limits = c(0, 9.5), expand = c(0, 0), breaks = seq(0, 9, 1)) +
+  theme_market + 
+  geom_hline(yintercept = 9, linetype  = "dashed", color = met_slate, size = 1) 
+```
+
+:::
+
+::: {.column width="30%"}
+- Cuantas unidades debe consumir a $P=9$?
+- **R./** 
+:::
+::::
+
+## Valoración Marginal
+
+::::{.columns}
+::: {.column width="70%"}
+```{r anh167ytr2, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+ggplot(data = step_demand, mapping = aes(x = x, y = mv)) +
+  geom_step(color = red_pink, size = 1) +
+  labs(x = "q", y = "VM") +
+  scale_x_continuous(limits = c(0, 9.5), expand = c(0, 0), breaks = seq(0, 9, 1)) +
+  scale_y_continuous(limits = c(0, 9.5), expand = c(0, 0), breaks = seq(0, 9, 1)) +
+  theme_market + 
+  geom_hline(yintercept = 9, linetype  = "dashed", color = met_slate, size = 1)
+```
+
+:::
+
+::: {.column width="30%"}
+- Cuantas unidades debe consumir a $P=9$?
+- **R./** [0]{.alert}
+:::
+::::
+
+## Valoración Marginal
+
+:::{.fragment}
+Las decisiones de compra. Mentalmente se asocian a la [valoración marginal]{.alert}
+:::
+
+:::{.fragment}
+:::{.callout-note}
+## Reglas:
+- Detenga sus compras si $VM>P$. Ya usted ha [comprado]{.under} [muy poco]{.bg style="--col: #FFFF00"}
+- Detenga sus compras si $VM<P$. Ya usted ha [comprado]{.under} [demasiado]{.bg style="--col: #FFFF00"}
+- Haga sus compras si $VM=P$. Usted ha [comprado]{.under} [lo optimo]{.bg style="--col: #f6870f"}
+:::
+:::
+
+## Excedente del Consumidor
+
+::::{.columns}
+::: {.column width="70%"}
+![](graphs/diagexc.png)
+
+:::
+
+::: {.column width="30%"}
+- Excedente del consumidor
+- Es el [objetivo]{.blur} a conseguir
+- Se debe intentar extraer al máximo
+:::
+::::
+
+## Estrategia de precio vía segmento
+
+:::{.fragment}
+![](graphs/pricestar.png)
+:::
+
+## Diferenciando
+
+:::{.incremental}
+- Supervivencia
+- Máximo beneficio actual
+- Máxima cuota de mercado
+- Máximo aprovechamiento del mercado
+- Liderazgo en calidad del producto
+:::
+
+## Diferenciando
+
+![](graphs/Preciosel.png)
+
+
+## {background-color="#006dae"}
+
+<div class='pac-man'></div>
+
+<br/>
+
+::: {.r-fit-text}
+Gracias por su atención
+:::
+
+```{r}
+#| include: false
+#| echo: false
+library(fontawesome)
+```
+
+`r fa('file-code')` Raze, K (2022). *Lecture Notes: Principles in Microeconomics*.
+
+`r fa('file-code')` Wilbur, K (2023). *Teaching material*.
+
+`r fa('book')` Dzwigol, H. (2020). *Innovation in marketing research: quantitative and qualitative analysis*.
