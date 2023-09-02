@@ -716,6 +716,19 @@ Las decisiones de compra. Mentalmente se asocian a la [valoración marginal]{.al
 
 ![](graphs/Preciosel.png)
 
+## Concepto desde el costo
+
+:::{.incremental}
+- Los [precios]{.alert} son consecuentes con:
+- $\mathbb{B}=\color{red}{Precio}\times Cantidad - \mathbb{CT}$
+- Dentro los costos totales (CT), tenemos los [fijos]{.reder} y [variables]{.blur}
+- $$\mathbb{B}=\color{red}{Precio}\times Cantidad - salarios(H)-arriendos(K)$$
+:::
+
+
+## Estrategias
+
+![](graphs/colbo.png)
 
 ## {background-color="#006dae"}
 
