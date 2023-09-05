@@ -1,0 +1,31 @@
+---
+title: "Workclass 03"
+author: "Carlos Andres Yanes Guerra"
+subtitle: "Departamento de Economía"
+institute: "Universidad del Norte"
+format:
+  pdf:
+    toc: true
+    number-sections: true
+    colorlinks: true
+---
+
+# Presentación
+
+Este Workclass muestra un caso para intentar aplicar una técnica de segmentación (clusterización) de acuerdo a las características y/o condiciones de un grupo de personas. La idea, es aplicar los métodos propuestos en clase sobre todo en *python*.
+
+## Objetivo
+
+Vincular la segmentación de forma técnica y aplicada a una situación o caso. Similarmente establecer la propuesta de un diferenciado de precios a la hora de proponer un precio de venta para el caso habitacional.
+
+# Propuesta General
+
+**1.** Importe la base de datos `Casasyprop.xlxs` a su ambiente de trabajo en Colab. Haga un encabezado de las variables y haga un *summary estadistico*.
+
+**2.** Fije dos elementos o variables con las que desea segmentar la base. Tenga en cuenta la definición o justificación de esas variables para crear su segmento. *No invente por inventar* Justifique esa elección.
+
+**3.** De acuerdo al `k-means` describa todo el proceso y establezca en un gráfico la segmentacion.
+
+**4.** Replique el caso para componentes principales. Difieren los resultados? Discuta
+
+**5.** De acuerdo al número de cluster que logra identificar en el punto (3) con el algoritmo de K-means. Plantee una estrategia de precios. Intente vincular un precio premium, uno medio y uno bajo. Qué características tiene en cuenta y por qué? No olvide tratar de diferenciar tanto horizontalmente como verticalmente, sea la propuesta a realizar. 
