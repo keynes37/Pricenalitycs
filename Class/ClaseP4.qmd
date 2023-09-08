@@ -300,6 +300,70 @@ Miren que el $Img < Precio$.
 ¿Debe vender el jabon adicional?
 :::
 
+## Segmentación en precio
+
+:::{.fragment}
+- Imagine lo **siguiente**:
+
+|              |DAP A  |DAP B  |
+|--------------|-------|-------|
+|Segmento X    |    30$|    125|
+|Segmento Y    |    50 |    100|
+:::
+
+:::{.fragment}
+- Note que los del segmento [X]{.oranger} valoran mucho mas el [producto B]{.bg style="--col: #4285F4"} que los del otro Segmento. Pero en cambio los del segmento [Y]{.reder} valoran mas el [producto A]{.bg style="--col: #FF8000"}.
+:::
+
+:::{.fragment}
+- Como establecer el [precio]{.under} correcto para cada segmento?
+:::
+
+## Segmentación en precio
+
+:::{.fragment}
+Si el [producto A]{.bg style="--col: #FF8000"} se vende en `$50` solo el segmento [Y]{.reder} lo comprará y el beneficio por unidad será de `$50`.   
+:::
+
+:::{.fragment}
+En cambio si lo vende en `$30` lo compraran ambos segmentos y su beneficio será de `$60`... va ganando por ahí
+:::
+
+:::{.fragment}
+Ahora, si hacemos lo mismo con el [producto B]{.bg style="--col: #4285F4"} y se ofrece a un precio de `$100` la empresa ganará `$200` que en lugar de solo `$125`
+:::
+
+:::{.fragment}
+Mire que si vende así, su ganancia total es de `$260`
+:::
+
+## Segmentación en precio
+
+:::{.fragment}
+Considera que es suficiente eso? puede la empresa hacer mas dinero `r fa ("money-bill-alt", fill="green")`?
+:::
+
+:::{.fragment}
+La respuesta es si!!
+:::
+
+:::{.fragment}
+:::{.callout-warning}
+## Estrategia tipo cesta
+La empresa puede vender de forma [combinada]{.bg style="--col: #FFFF00"}, es decir, ofrecer ambos producto en combinación, paquete o comunmente le dicen "combo".
+:::
+:::
+
+## Segmentación en precio
+
+:::{.fragment}
+Sumemos las valoraciones de cada segmento. El Grupo [X]{.oranger}  $30(A)+125(B)=155$ y para el segmento [Y]{.reder} es de $50(A)+100(B)=150$, entonces podemos [cobrar]{.under} un precio de `$150` y la empresa venderá (A+B) productos y de esa manera su ganancia por combo será de `$300` y este es mucho mejor beneficio que los `$260` que anteriormente ganaba.
+:::
+
+:::{.fragment}
+La noción de precios por suscripción y planes en combo es mucho mejor en la disponibilidad a pagar y ofrecer [paquetes]{.reder}. De esa manera extrae mejor el excedente de los consumidores.
+:::
+
 # Sensibilidad en el precio
 
 ## Sobre el consumo
@@ -529,3 +593,393 @@ row_spec(1:10, color = met_slate) %>%
 row_spec(1:10, extra_css = "line-height: 110%;") %>% 
 column_spec(1, italic = T, color = met_slate)
 ```
+
+# Sustitutos o complementarios :hand_over_mouth:
+
+## Cambio en precios relacionados con bienes
+
+::::{.columns}
+::: {.column width=“70%"}
+```{r, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+base
+```
+:::
+
+::: {.column width="30%"}
+[Sustitutos]{.bg style="--col: #e64173"}: Dos bienes donde la demanda de uno se [incrementa]{.alert} cuando el [precio]{.blur} del otro bien $\uparrow$.
+:::
+::::
+
+## Cambio en precios relacionados con bienes
+::::{.columns}
+::: {.column width=“70%"}
+```{r, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+demand_increase
+```
+:::
+
+::: {.column width="30%"}
+[Sustitutos]{.bg style="--col: #e64173"}: Dos bienes donde la demanda de uno se [incrementa]{.alert} cuando el [precio]{.blur} del otro bien $\uparrow$.
+:::
+::::
+
+## Cambio en precios relacionados con bienes
+::::{.columns}
+::: {.column width=“70%"}
+```{r, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+base
+```
+:::
+
+::: {.column width="30%"}
+[Complementos]{.bg style="--col: #00FFFF"}: Dos bienes donde la demanda de uno se [incrementa]{.alert} cuando el [precio]{.blur} del otro bien $\downarrow$.
+:::
+::::
+
+## Cambio en precios relacionados con bienes
+::::{.columns}
+::: {.column width=“70%"}
+```{r, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+demand_decrease
+```
+:::
+
+::: {.column width="30%"}
+[Complementos]{.bg style="--col: #00FFFF"}: Dos bienes donde la demanda de uno se [incrementa]{.alert} cuando el [precio]{.blur} del otro bien $\downarrow$.
+:::
+::::
+
+## Cambio en precios relacionados con bienes
+::::{.columns}
+::: {.column width=“70%"}
+```{r, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+base
+```
+:::
+
+::: {.column width="30%"}
+Qué ocurre si hay un $\downarrow$ en el precio de las margarinas con la **mantequilla**?
+:::
+::::
+
+## Cambio en precios relacionados con bienes
+::::{.columns}
+::: {.column width=“70%"}
+```{r, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+demand_decrease
+```
+:::
+
+::: {.column width="30%"}
+Qué ocurre si hay un $\downarrow$ en el precio de las margarinas con la **mantequilla**?
+R./ Demanda de la Mantequilla $\Rightarrow$ se [reduce]{.reder}
+:::
+::::
+
+## Elasticidad cruzada de la demanda
+
+:::{.fragment}
+Nuevamente retomamos la formula de la *elasticidad*. Pero con una ligera modificación
+:::
+
+:::{.fragment}
+> $$\epsilon_Y = \dfrac{\text{Cambio % en la cantidad de consumo}}{\text{Cambio % en el precio del bien B}}$$
+:::
+
+:::{.fragment}
+[Interpretación:]{.reder} "Un cambio del 1% del precio del bien B lleva a $\epsilon_Y$ cambios porcentuales de consumo en el bien A."
+:::
+
+:::{.fragment}
+- $\epsilon_x >0$ ==> Bienes [sustitutos]{.alert}
+- $\epsilon_x <0$ ==> Bienes [complementarios]{.alert}
+:::
+
+## Ejemplos
+
+```{R, echo = F, escape = F}
+data.frame(
+  v1 = c("Mantequilla", "Electricidad", "Café", "Whisky"),
+  v2 = c("Margarina", "Gas Natural", "Té", "Cervezas"),
+  v3 = c(1.53, 0.50, 0.15, -0.11),
+  v4 = c(rep("Sustitutos", 3), rep("Complementos", 1))
+) %>% kable(
+  escape = F,
+  col.names = c("Producto A", "Producto B", "Elasticidad Cruzada", "Sustitutos o Complementarios?"),
+  align = c("l", "l", "c", "c")
+) %>%
+row_spec(1:4, color = met_slate) %>%
+row_spec(1:4, extra_css = "line-height: 110%;") %>% 
+column_spec(1:2, italic = T, color = met_slate)
+```
+
+# Qué determina la oferta de un mercado?
+
+## Condiciones de crear un negocio
+
+:::{.fragment}
+- Cualquier empresa que reciba una [oferta]{.blur} o este dispuesto a aceptar los costos marginales de producción podrá entrar a un mercado
+:::
+
+:::{.incremental}
+- Precios, salarios (insumos)
+- Tecnología de producción
+- Expectativa en crecimiento de precios
+- Compentencia
+- Tiempo (lluvia, calor, terremotos)
+:::
+
+## Movimientos Negocio
+::::{.columns}
+::: {.column width=“70%"}
+```{r, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+x <- 0:10
+demand <- function(x) 10 - x
+supply <- function(x) 1 + x
+
+q_1 <- uniroot(function(x) demand(x) - supply(x), range(x))$root
+p_1 <- demand(q_1)
+
+base_2 <- ggplot(data = data.frame(x = 0), mapping = aes(x = x)) +
+  scale_x_continuous(limits = c(0, 10.5), expand = c(0, 0), breaks = c(q_1), labels = c(expression(Q^"*"))) +
+  scale_y_continuous(limits = c(0, 10.5), expand = c(0, 0), breaks = c(p_1), labels = c(expression(P^"*"))) +
+  theme_market +
+  labs(x = "Q", y = "P") +
+  stat_function(fun = demand, color = red_pink, size = 1) +
+  stat_function(fun = supply, color = purple, size = 1) +
+  geom_point(x = q_1, y = p_1, color = met_slate, size = 2) +
+  geom_segment(x = 0, xend = q_1, y = p_1, yend = p_1, color = met_slate, linetype = "dashed", size = 1) +
+  geom_segment(x = q_1, xend = q_1, y = 0, yend = p_1, color = met_slate, linetype = "dashed", size = 1) +
+  annotate("text", label = expression(D), x = 10, y = 0.65, color = red_pink, family = "Fira Sans", size = 9) +
+  annotate("text", label = expression(S[1]), x = 9.4, y = 9.65, color = purple, family = "Fira Sans", size = 9)
+
+base_2
+```
+:::
+
+::: {.column width="30%"}
+- A determinados [precios]{.blur}
+- La oferta surge
+:::
+::::
+
+## Movimientos Negocio
+::::{.columns}
+::: {.column width=“70%"}
+```{r, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+x <- 0:10
+demand <- function(x) 10 - x
+supply <- function(x) 1 + x
+supply_2 <- function(x) -1 + x
+
+q_1 <- uniroot(function(x) demand(x) - supply(x), range(x))$root
+p_1 <- demand(q_1)
+
+q_2 <- uniroot(function(x) demand(x) - supply_2(x), range(x))$root
+p_2 <- demand(q_2)
+
+supply_increase <- ggplot(data = data.frame(x = 0), mapping = aes(x = x)) +
+  scale_x_continuous(limits = c(0, 10.5), expand = c(0, 0), breaks = c(q_2), labels = c(expression(Q^"*"))) +
+  scale_y_continuous(limits = c(0, 10.5), expand = c(0, 0), breaks = c(p_2), labels = c(expression(P^"*"))) +
+  theme_market +
+  labs(x = "Q", y = "P") +
+  stat_function(fun = demand, color = red_pink, size = 1) +
+  stat_function(fun = supply_2, color = purple, size = 1) +
+  stat_function(fun = supply, color = purple, size = 1, alpha = 0.5) +
+  geom_point(x = q_1, y = p_1, color = met_slate, size = 2, alpha = 0.5) +
+  geom_point(x = q_2, y = p_2, color = met_slate, size = 2) +
+  geom_segment(x = 0, xend = q_1, y = p_1, yend = p_1, color = met_slate, linetype = "dashed", size = 1, alpha = 0.5) +
+  geom_segment(x = 0, xend = q_2, y = p_2, yend = p_2, color = met_slate, linetype = "dashed", size = 1) +
+  geom_segment(x = q_1, xend = q_1, y = 0, yend = p_1, color = met_slate, linetype = "dashed", size = 1, alpha = 0.5) +
+  geom_segment(x = q_2, xend = q_2, y = 0, yend = p_2, color = met_slate, linetype = "dashed", size = 1) +
+  geom_segment(aes(x = 6 + 0.2, y = 7, xend = 8 - 0.2, yend = 7), arrow = arrow(angle = 20, length = unit(0.4,"cm"), type = "closed"), color = met_slate, size = 1) + 
+  annotate("text", label = expression(D), x = 10, y = 0.65, color = red_pink, family = "Fira Sans", size = 9) +
+  annotate("text", label = expression(S[2]), x = 9.4, y = 7.65, color = purple, family = "Fira Sans", size = 9) +
+  annotate("text", label = expression(S[1]), x = 9.4, y = 9.65, color = purple, family = "Fira Sans", size = 9, alpha = 0.5)
+
+supply_increase
+```
+:::
+
+::: {.column width="30%"}
+- A determinados [precios]{.blur}
+- La oferta surge
+- De ser demasiados P $\downarrow$
+:::
+::::
+
+## Movimientos Negocio
+::::{.columns}
+::: {.column width=“70%"}
+```{r, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+base_2
+```
+:::
+
+::: {.column width="30%"}
+- De igual manera
+- Si hay muy pocas empresas
+:::
+::::
+
+## Movimientos Negocio
+::::{.columns}
+::: {.column width=“70%"}
+```{r, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+x <- 0:10
+demand <- function(x) 10 - x
+supply <- function(x) 1 + x
+supply_2 <- function(x) 3 + x
+
+q_1 <- uniroot(function(x) demand(x) - supply(x), range(x))$root
+p_1 <- demand(q_1)
+
+q_2 <- uniroot(function(x) demand(x) - supply_2(x), range(x))$root
+p_2 <- demand(q_2)
+
+supply_decrease <- ggplot(data = data.frame(x = 0), mapping = aes(x = x)) +
+  scale_x_continuous(limits = c(0, 10.5), expand = c(0, 0), breaks = c(q_2), labels = c(expression(Q^"*"))) +
+  scale_y_continuous(limits = c(0, 10.5), expand = c(0, 0), breaks = c(p_2), labels = c(expression(P^"*"))) +
+  theme_market +
+  labs(x = "Q", y = "P") +
+  stat_function(fun = demand, color = red_pink, size = 1) +
+  stat_function(fun = supply_2, color = purple, size = 1) +
+  stat_function(fun = supply, color = purple, size = 1, alpha = 0.5) +
+  geom_point(x = q_1, y = p_1, color = met_slate, size = 2, alpha = 0.5) +
+  geom_point(x = q_2, y = p_2, color = met_slate, size = 2) +
+  geom_segment(x = 0, xend = q_1, y = p_1, yend = p_1, color = met_slate, linetype = "dashed", size = 1, alpha = 0.5) +
+  geom_segment(x = 0, xend = q_2, y = p_2, yend = p_2, color = met_slate, linetype = "dashed", size = 1) +
+  geom_segment(x = q_1, xend = q_1, y = 0, yend = p_1, color = met_slate, linetype = "dashed", size = 1, alpha = 0.5) +
+  geom_segment(x = q_2, xend = q_2, y = 0, yend = p_2, color = met_slate, linetype = "dashed", size = 1) +
+  geom_segment(aes(x = 6 - 0.2, y = 7, xend = 4 + 0.2, yend = 7), arrow = arrow(angle = 20, length = unit(0.4,"cm"), type = "closed"), color = met_slate, size = 1) + 
+  annotate("text", label = expression(D), x = 10, y = 0.65, color = red_pink, family = "Fira Sans", size = 9) +
+  annotate("text", label = expression(S[2]), x = 7.4, y = 9.65, color = purple, family = "Fira Sans", size = 9) +
+  annotate("text", label = expression(S[1]), x = 9.4, y = 9.65, color = purple, family = "Fira Sans", size = 9, alpha = 0.5)
+
+supply_decrease
+```
+:::
+
+::: {.column width="30%"}
+- De igual manera
+- Si hay muy pocas empresas
+- El precio $\Rightarrow$ [aumenta]{.blur}
+:::
+::::
+
+## Caso 1
+::::{.columns}
+::: {.column width=“70%"}
+```{r, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+base_2
+```
+:::
+
+::: {.column width="30%"}
+- Qué ocurre con el mercado del papel si el precio de la madera [aumenta]{.reder}
+:::
+::::
+
+## Caso 1
+::::{.columns}
+::: {.column width=“70%"}
+```{r, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+supply_decrease
+```
+:::
+
+::: {.column width="30%"}
+- Qué ocurre con el mercado del papel si el precio de la madera [aumenta]{.reder}
+- R./ Pues se escasea el papel
+:::
+::::
+
+## Caso 2
+::::{.columns}
+::: {.column width=“70%"}
+```{r, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+base_2
+```
+:::
+
+::: {.column width="30%"}
+- Qué ocurre con el mercado de la leche si se encuentra una nueva hormona de crecimiento del bovino?
+:::
+::::
+
+## Caso 2
+::::{.columns}
+::: {.column width=“70%"}
+```{r, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+supply_increase
+```
+:::
+
+::: {.column width="30%"}
+- Qué ocurre con el mercado de la leche si se encuentra una nueva hormona de crecimiento del bovino?
+- [Aumenta la oferta]{.blur}
+:::
+::::
+
+# Pregunta :bomb:
+
+## Pregunta 1 {.smaller}
+P: Cuál de los siguientes efectos reducen la oferta de naranjas?
+
+> **A**. Una nueva tecnología que afecta el costo de producción?
+
+> **B**. Precios de las naranjas caen precipitadamente
+
+> **C**. Caida del consumo de naranjas
+
+> **D**. Un nuevo Jugo de naranja se vuelve viral
+
+> **E**. Una tormenta arraza con los campos de cultivo
+
+## Pregunta 1 {.smaller}
+P: Cuál de los siguientes efectos reducen la oferta de naranjas?
+
+> **A**. Una nueva tecnología que afecta el costo de producción?
+
+> **B**. Precios de las naranjas caen precipitadamente
+
+> **C**. Caida del consumo de naranjas
+
+> **D**. Un nuevo Jugo de naranja se vuelve viral
+
+> [ **E**. Una tormenta arraza con los campos de cultivo]{.alert}
+
+## {background-color="#006dae"}
+
+<div class='pac-man'></div>
+
+<br/>
+
+::: {.r-fit-text}
+Gracias por su atención
+:::
+
+`r fa('book')` Dholakia, U. (2017). *How to Price Effectively: A Guide for Managers and Entrepreneurs*. Utpal Dholakia.
+
+`r fa('book')` Dzwigol, H. (2020). *Innovation in marketing research: quantitative and qualitative analysis*.
+
+`r fa('book')` Feurer, S., Schuhmacher, M. C., & Kuester, S. (2019). *How pricing teams develop effective pricing strategies for new products*. Journal of Product Innovation Management, 36(1), 66-86.
+
+## {background-color="#006dae"}
+
+<div class='pac-man'></div>
+
+<br/>
+
+`r fa('file-code')` Raze, K (2022). *Lecture Notes: Principles in Microeconomics*.
+
+`r fa('book')` Simon H. (2015). *Confessions of the Pricing Man: How Price Affects Everything*. Springer
+
+
+
+
+
+
+
+
+
