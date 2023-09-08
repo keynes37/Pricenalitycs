@@ -1,0 +1,531 @@
+---
+title: "Análisis de precios"
+subtitle: "Maestría en Mercadeo"
+format:
+  revealjs: 
+    theme: [simple, mio.scss]
+    css: pacmanem.css
+author:
+  - name: Carlos Andrés Yanes
+    email: cayanes@uninorte.edu.co
+    affiliations: Universidad del Norte
+from: markdown+emoji
+---
+
+## Semana 4
+
+::: incremental
+-   Como vamos?
+-   Preguntas de la clase anterior? :grimacing:
+-   Finalizamos con el enfoque de formulas de precio
+-   Miramos elementos de la psicología de precios e incidencia
+-   Finalidad
+:::
+
+::: {layout="[-5,6]" layout-valign="bottom"}
+![](graphs/pic2clas1.png)
+:::
+
+## Pilares de precios
+
+![](graphs/Estp41.png)
+
+
+## Pilares de precios
+
+:::{.fragment}
+:::{.callout-note}
+## Costo
+Los [costos]{.reder} son uno de los factores más comúnmente reconocido en una estrategia de fijación de precios y suelen fijar el precio mínimo. -Si no son todas- la mayoría de empresas fijan su estrategia a partir del costo que tiene cuando produce o comercializa algo
+:::
+:::
+
+:::{.fragment}
+```{r}
+#| include: false
+#| warning: false
+library(fontawesome)
+```
+
+- Costos directos `r fa("coffee", fill="red")`
+- Costos indirectos `r fa("coins", fill="red")`
+:::
+
+## Pilares de precios
+
+:::{.fragment}
+:::{.callout-note}
+## Valor de compra
+Los [compradores]{.alert} siempre valoran los bienes y servicios de acuerdo a la [disposición a pagar]{.blur}. Desde luego a mayor disposición mas oportunidad hay de compras y desde luego es una opción muy fuerte de convencer y de extraer el excedente del consumidor.
+:::
+:::
+
+:::{.fragment}
+- Valor `r fa("heart", fill="red")`
+- Funcionalidad `r fa("glass-cheers", fill="yellow")`
+- Adquisición `r fa("glass-martini", fill="blue")`
+:::
+
+## Pilares de precios
+
+:::{.fragment}
+:::{.callout-tip}
+## Precios de referencia
+Los [clientes]{.alert} raramente toman decisiones con el solo precio. Tienen en cuenta múltiples formas, factores y maneras para finalmente [comprar]{.cupp} un producto o servicio. Cualquier detalle "extra" es plausible de ser tomado para cobrar un precio mayor y el cliente finalmente acepte, la comparación con los precios de la competencia será relevante.
+:::
+:::
+
+:::{.fragment}
+- Forma de pagos `r fa("google-pay", fill="green")`
+- Referencia `r fa("globe", fill="red")`
+- Justicia `r fa("gavel", fill="orange")`
+:::
+
+## Pilares de precios
+
+:::{.fragment}
+:::{.callout-important}
+## Proposición de valor
+El [valor]{.alert} adicional o agregado de un producto va envuelto en las condiciones de la forma de poder cobrar mas y así el **beneficio** sea mejor. Las empresas adicionan un punto que hace distinto el producto de las comparaciones comunes que aplican los consumidores/compradores.
+:::
+:::
+
+:::{.fragment}
+- Confianza `r fa("comments-dollar", fill="green")`
+- Referencia `r fa("coins", fill="red")`
+- Poder `r fa("hat-cowboy", fill="blue")`
+:::
+
+## Pilares de precios
+
+:::{.fragment}
+![](graphs/rolesenin.png){width=60%}
+:::
+
+## Pilares de precios
+
+:::{.fragment}
+![](graphs/invprice.png)
+:::
+
+## Ecosistema de precios
+
+:::{.fragment}
+![](graphs/c4n2.png){width=80%}
+:::
+
+## Estipulación natural del precio
+
+:::{.fragment}
+![](graphs/c4n3.png)
+:::
+
+## Estipulación del precio en pilares
+
+:::{.fragment}
+![](graphs/c4n1.png)
+:::
+
+## Estipulación del precio creando valor 1
+
+:::{.fragment}
+![](graphs/c4n4.png){width=80%}
+:::
+
+## Estipulación del precio creando valor 2
+
+:::{.fragment}
+![](graphs/c4primboun.png)
+:::
+
+
+## Precios por visión
+
+```{r Set}
+#| include: false
+options(htmltools.dir.version = FALSE)
+library(pacman)
+p_load(ggthemes, readxl, viridis, knitr, dslabs, gapminder, extrafont, Ecdat, wooldridge, tidyverse, magrittr, janitor, kableExtra, flextable)
+# Colores y definición
+red_pink <- "#e64173"
+met_slate <- "#272822" # metropolis font color 
+purple <- "#9370DB"
+green <- "#007935"
+light_green <- "#7DBA97"
+orange <- "#FD5F00"
+turquoise <- "#44C1C4"
+red <- "#b92e34"
+
+# Knitr opciones
+opts_chunk$set(
+  comment = "#>",
+  fig.align = "center",
+  fig.height = 7,
+  fig.width = 10.5,
+  #dpi = 300,
+  #cache = T,
+  warning = F,
+  message = F
+)  
+theme_simple <- theme_bw() + theme(
+  axis.line = element_line(color = met_slate),
+  panel.grid = element_blank(),
+  rect = element_blank(),
+  strip.text = element_blank(),
+  text = element_text(family = "Fira Sans", color = met_slate, size = 17),
+  axis.text.x = element_text(size = 12),
+  axis.text.y = element_text(size = 12),
+  axis.ticks = element_blank()
+)
+theme_market <- theme_bw() + theme(
+  axis.line = element_line(color = met_slate),
+  panel.grid = element_blank(),
+  rect = element_blank(),
+  strip.text = element_blank(),
+  text = element_text(family = "Fira Sans", color = met_slate, size = 17),
+  axis.title.x = element_text(hjust = 1, size = 17),
+  axis.title.y = element_text(hjust = 1, angle = 0, size = 17),
+  axis.ticks = element_blank()
+)
+theme_gif <- theme_bw() + theme(
+  axis.line = element_line(color = met_slate),
+  panel.grid = element_blank(),
+  rect = element_blank(),
+  text = element_text(family = "Fira Sans", color = met_slate, size = 17),
+  axis.text.x = element_text(size = 12),
+  axis.text.y = element_text(size = 12),
+  axis.ticks = element_blank()
+)
+wrapper <- function(x, ...) paste(strwrap(x, ...), collapse = "\n")
+```
+
+:::{.fragment}
+
+```{r, mi1, echo = FALSE}
+data.frame(
+  A = c("Chocolate", "Cappuccino", "Café Mocca", "Mocca con Chocolate Blanco", "Cappuccino 20onz"),
+  B = c(5500, 6300, 6800, 6950, 7200))%>% 
+  kable(
+  escape = F,
+  col.names = c("Tipo", "Precio de venta"),
+  align = c("l", "c")
+) %>%
+row_spec(1:5, color = met_slate) %>%
+row_spec(1:5, extra_css = "line-height: 110%;") %>% 
+column_spec(1, italic = T, color = met_slate)
+```
+:::
+
+## Precios por visión
+
+```{r, mi2, echo = FALSE}
+data.frame(
+  A = c("Chocolate", "Cafe con crema", "Café con leche", "Café, leche y Chocolate Blanco", "Café con leche 20onz"),
+  B = c(3500, 4100, 4300, 4625, 5100))%>%
+kable(
+  escape = F,
+  col.names = c("Tipo", "Precio de venta"),
+  align = c("l", "c")
+) %>%
+row_spec(1:5, color = met_slate) %>%
+row_spec(1:5, extra_css = "line-height: 110%;") %>% 
+column_spec(1, italic = T, color = met_slate)
+```
+
+
+## Generalidades
+### A tener en cuenta
+
+:::{.incremental}
+- Cada [empresa]{.alert} implementa su estrategía de acuerdo a lo que observa que hacen los demás
+- Desde luego aquella que tiene mucho [poder de mercado]{.bg style="--col: #FFFF00"} estipula propiamente sus precios porque no hay competencia cerca e inclusive no la posee (caso monopolio).
+- La estrategia mas [fácil]{.oranger} es la que va por establecer el precio a partir de los costos y mark-up que posee.
+:::
+
+## Usando las ventas para evaluar
+### Decisiones de precios
+
+:::{.incremental}
+- La idea que el [crecimiento de las ventas]{.reder} es la medida propia de las empresas, ya que esta estipulado en las mentes de los gerentes
+- Cuando se compara con otras [marcas]{.cupp} o competencia y algunas tienen que ver con el nivel de [lealtad]{.blur}
+- Si la empresa conoce su [beneficio marginal]{.oranger}, el deseo o cambio esperado en ventas será usado de forma [precisa]{.under}
+:::
+
+# Pregunta :thinking:  
+- Si se da un 10% de descuento del precio del lubricante que actualmente esta en $21.000 y hay un margen de ganancia estipulado del 50%. [¿Cuál es el incremento mínimo del volumen de ventas que necesitará la empresa para aumentar su beneficio sin afectar el nivel actual?]{.reder}
+
+## Ventas{.smaller} 
+
+:::{.fragment}
+- Vamos a usar lo siguiente:
+:::
+
+:::{.fragment}
+- La formula es:
+$$\text{Volumen % de ventas}= \dfrac{\text{- Cambio %  en el precio}}{\text{Margen}+\text{Cambio % en el precio}}$$
+:::
+
+:::{.fragment}
+[Interpretación:]{.reder} Después que: $(-10\%/50\%+(-10\%))=25\%$ "Si hay un descuento del 10%, la estación de servicio debe incrementar el cambio de aceite (ventas) en un 25%".
+:::
+
+## Ventas
+
+![](graphs/c4pric.png)
+
+# Ingreso marginal
+
+Actualmente una empresa vende 40 jabones a un Precio de $100, pero la curva de demanda nos dice que para comprar un jabon adicional debemos bajar el precio a P=99. ¿Cuánto es el [ingreso marginal]{.under} de esa firma?
+
+## Ingreso marginal
+
+:::{.fragment}
+> Aquel ingreso adicional que optiene la firma por vender una unidad adicional
+:::
+
+:::{.fragment}
+- Ingresos de antes: 40 x `$100`=`$4000`  
+:::
+
+:::{.fragment}
+Los ingresos de... ahora: 41 x `$99`=`$4059`
+:::
+
+:::{.fragment}
+El ingreso marginal es `$59`.
+Miren que el $Img < Precio$.
+:::
+
+:::{.fragment .fade-up}
+¿Debe vender el jabon adicional?
+:::
+
+# Sensibilidad en el precio
+
+## Sobre el consumo
+
+::::{.columns}
+::: {.column width="70%"}
+```{r, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+x <- 0:10
+demand <- function(x) 10 - x
+demand_2 <- function(x) 12 - x
+supply <- function(x) 1 + x
+
+q_1 <- uniroot(function(x) demand(x) - supply(x), range(x))$root
+p_1 <- demand(q_1)
+
+q_2 <- uniroot(function(x) demand_2(x) - supply(x), range(x))$root
+p_2 <- demand_2(q_2)
+
+base <- ggplot(data = data.frame(x = 0), mapping = aes(x = x)) +
+  scale_x_continuous(limits = c(0, 10.5), expand = c(0, 0), breaks = c(q_1), labels = c(expression(Q^"*"))) +
+  scale_y_continuous(limits = c(0, 10.5), expand = c(0, 0), breaks = c(p_1), labels = c(expression(P^"*"))) +
+  theme_market +
+  labs(x = "Q", y = "P") +
+  stat_function(fun = demand, color = red_pink, size = 1) +
+  stat_function(fun = supply, color = purple, size = 1) +
+  geom_point(x = q_1, y = p_1, color = met_slate, size = 2) +
+  #geom_point(x = q_2, y = p_2, color = met_slate, size = 2) +
+  geom_segment(x = 0, xend = q_1, y = p_1, yend = p_1, color = met_slate, linetype = "dashed", size = 1) +
+  #geom_segment(x = 0, xend = q_2, y = p_2, yend = p_2, color = met_slate, linetype = "dashed", size = 1) +
+  geom_segment(x = q_1, xend = q_1, y = 0, yend = p_1, color = met_slate, linetype = "dashed", size = 1) +
+  #geom_segment(x = q_2, xend = q_2, y = 0, yend = p_2, color = met_slate, linetype = "dashed", size = 1) +
+  annotate("text", label = expression(D[1]), x = 10, y = 0.65, color = red_pink, family = "Fira Sans", size = 9) +
+  annotate("text", label = "S", x = 9.2, y = 9.65, color = purple, family = "Fira Sans", size = 9)
+
+base
+```
+:::
+
+::: {.column width="30%"}
+- Demanda y oferta acordes
+- Si aumenta la disponibilidad a pagar
+:::
+::::
+
+## Sobre el consumo
+
+::::{.columns}
+::: {.column width="70%"}
+```{r, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+x <- 0:10
+demand <- function(x) 10 - x
+demand_2 <- function(x) 12 - x
+supply <- function(x) 1 + x
+
+q_1 <- uniroot(function(x) demand(x) - supply(x), range(x))$root
+p_1 <- demand(q_1)
+
+q_2 <- uniroot(function(x) demand_2(x) - supply(x), range(x))$root
+p_2 <- demand_2(q_2)
+
+demand_increase <- ggplot(data = data.frame(x = 0), mapping = aes(x = x)) +
+  scale_x_continuous(limits = c(0, 10.5), expand = c(0, 0), breaks = c(q_2), labels = c(expression(Q^"*"))) +
+  scale_y_continuous(limits = c(0, 10.5), expand = c(0, 0), breaks = c(p_2), labels = c(expression(P^"*"))) +
+  theme_market +
+  labs(x = "Q", y = "P") +
+  stat_function(fun = demand, color = red_pink, size = 1, alpha = 0.5) +
+  stat_function(fun = demand_2, color = red_pink, size = 1) +
+  stat_function(fun = supply, color = purple, size = 1) +
+  geom_point(x = q_1, y = p_1, color = met_slate, size = 2, alpha = 0.5) +
+  geom_point(x = q_2, y = p_2, color = met_slate, size = 2) +
+  geom_segment(x = 0, xend = q_1, y = p_1, yend = p_1, color = met_slate, linetype = "dashed", size = 1, alpha = 0.5) +
+  geom_segment(x = 0, xend = q_2, y = p_2, yend = p_2, color = met_slate, linetype = "dashed", size = 1) +
+  geom_segment(x = q_1, xend = q_1, y = 0, yend = p_1, color = met_slate, linetype = "dashed", size = 1, alpha = 0.5) +
+  geom_segment(x = q_2, xend = q_2, y = 0, yend = p_2, color = met_slate, linetype = "dashed", size = 1) +
+  geom_segment(aes(x = 6 + 0.2, y = 4, xend = 8 - 0.2, yend = 4), arrow = arrow(angle = 20, length = unit(0.4,"cm"), type = "closed"), color = met_slate, size = 1) + 
+  annotate("text", label = expression(D[1]), x = 10, y = 0.65, color = red_pink, family = "Fira Sans", size = 9, alpha = 0.5) +
+  annotate("text", label = expression(D[2]), x = 10, y = 2.65, color = red_pink, family = "Fira Sans", size = 9) +
+  annotate("text", label = "S", x = 9.2, y = 9.65, color = purple, family = "Fira Sans", size = 9)
+
+demand_increase
+```
+:::
+
+::: {.column width="30%"}
+- Demanda y oferta acordes
+- Si aumenta la disponibilidad a pagar
+- La demanda va a [desplazarse]{.alert}
+:::
+::::
+
+## Cambios consumo
+
+::::{.columns}
+::: {.column width="70%"}
+```{r, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+x <- 0:10
+demand <- function(x) 10 - x
+demand_2 <- function(x) 8 - x
+supply <- function(x) 1 + x
+
+q_1 <- uniroot(function(x) demand(x) - supply(x), range(x))$root
+p_1 <- demand(q_1)
+
+q_2 <- uniroot(function(x) demand_2(x) - supply(x), range(x))$root
+p_2 <- demand_2(q_2)
+
+demand_decrease <- ggplot(data = data.frame(x = 0), mapping = aes(x = x)) +
+  scale_x_continuous(limits = c(0, 10.5), expand = c(0, 0), breaks = c(q_2), labels = c(expression(Q^"*"))) +
+  scale_y_continuous(limits = c(0, 10.5), expand = c(0, 0), breaks = c(p_2), labels = c(expression(P^"*"))) +
+  theme_market +
+  labs(x = "Q", y = "P") +
+  stat_function(fun = demand, color = red_pink, size = 1, alpha = 0.5) +
+  stat_function(fun = demand_2, color = red_pink, size = 1) +
+  stat_function(fun = supply, color = purple, size = 1) +
+  geom_point(x = q_1, y = p_1, color = met_slate, size = 2, alpha = 0.5) +
+  geom_point(x = q_2, y = p_2, color = met_slate, size = 2) +
+  geom_segment(x = 0, xend = q_1, y = p_1, yend = p_1, color = met_slate, linetype = "dashed", size = 1, alpha = 0.5) +
+  geom_segment(x = 0, xend = q_2, y = p_2, yend = p_2, color = met_slate, linetype = "dashed", size = 1) +
+  geom_segment(x = q_1, xend = q_1, y = 0, yend = p_1, color = met_slate, linetype = "dashed", size = 1, alpha = 0.5) +
+  geom_segment(x = q_2, xend = q_2, y = 0, yend = p_2, color = met_slate, linetype = "dashed", size = 1) +
+  geom_segment(aes(x = 6 - 0.2, y = 4, xend = 4 + 0.2, yend = 4), arrow = arrow(angle = 20, length = unit(0.4,"cm"), type = "closed"), color = met_slate, size = 1) + 
+  annotate("text", label = expression(D[1]), x = 10, y = 0.65, color = red_pink, family = "Fira Sans", size = 9, alpha = 0.5) +
+  annotate("text", label = expression(D[2]), x = 8, y = 0.65, color = red_pink, family = "Fira Sans", size = 9) +
+  annotate("text", label = "S", x = 9.2, y = 9.65, color = purple, family = "Fira Sans", size = 9)
+
+demand_decrease
+```
+:::
+
+::: {.column width="30%"}
+- Demanda y oferta acordes
+- Si disminuye la disponibilidad a pagar
+- La demanda va a [desplazarse]{.alert}
+:::
+::::
+
+## Cambios en gustos
+
+::::{.columns}
+::: {.column width="70%"}
+```{r, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+base
+```
+:::
+
+::: {.column width="30%"}
+- Qué ocurre si en Barranquilla la gente le gusta mas la salsa
+:::
+::::
+
+## Cambios en gustos
+
+::::{.columns}
+::: {.column width="70%"}
+```{r, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+demand_increase
+```
+:::
+
+::: {.column width="30%"}
+- Qué ocurre si en Barranquilla la gente le gusta mas la salsa
+- Los [precios]{.blur} se incrementan $\uparrow$ 
+:::
+::::
+
+## Cambios en gustos
+
+::::{.columns}
+::: {.column width="70%"}
+```{r, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+base
+```
+:::
+
+::: {.column width="30%"}
+- Qué ocurre si las personas le mejoran el ingreso, con los estaderos de barrio?
+:::
+::::
+
+## Cambios en gustos
+
+::::{.columns}
+::: {.column width="70%"}
+```{r, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+demand_decrease
+```
+:::
+
+::: {.column width="30%"}
+- Qué ocurre si las personas le mejoran el ingreso, con los estaderos de barrio?
+- Las personas mejoran su status y van a discotecas
+:::
+::::
+
+## Sensibilidad
+
+:::{.fragment}
+Una medida de [respuesta]{.oranger} cuando cambia la demanda, se conoce como [elasticidad]{.under} 
+:::
+
+:::{.fragment}
+> $$\epsilon_Y = \dfrac{\text{Cambio % en la cantidad de consumo}}{\text{Cambio % en el ingreso}}$$
+:::
+
+:::{.fragment}
+[Interpretación:]{.reder} "Un cambio del 1% del ingreso lleva a $\epsilon_Y$ cambios porcentuales de consumo."
+:::
+
+:::{.fragment}
+- $\epsilon_Y > 0$ ==> [bien normal]{.blur} 
+- $\epsilon_Y < 0$ ==> [bien inferior]{.reder}
+:::
+
+## Ejemplos {.smaller}
+
+```{R, echo = F, escape = F}
+data.frame(
+  v1 = c("Automoviles", "Restaurantes", "Viviendas", "Gasolina", "Arriendos", "Cafe", "Cigarrillos", "Cuidado Médico", "Margarinas", "Transporte Público"),
+  v2 = c(3.00, 1.40, 1.2, 1.06, 1.00, 0.51, 0.42, 0.22, -0.20, -0.36),
+  v3 = c(rep("Normal", 8), rep("Inferior", 2))
+) %>% kable(
+  escape = F,
+  col.names = c("Bien/Servicio", "Elasticidad Ingreso", "Normal o Inferior?"),
+  align = c("l", "c", "c")
+) %>%
+row_spec(1:10, color = met_slate) %>%
+row_spec(1:10, extra_css = "line-height: 110%;") %>% 
+column_spec(1, italic = T, color = met_slate)
+```
