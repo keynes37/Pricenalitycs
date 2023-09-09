@@ -364,6 +364,78 @@ Sumemos las valoraciones de cada segmento. El Grupo [X]{.oranger}  $30(A)+125(B)
 La noción de precios por suscripción y planes en combo es mucho mejor en la disponibilidad a pagar y ofrecer [paquetes]{.reder}. De esa manera extrae mejor el excedente de los consumidores.
 :::
 
+## Ejercicio
+
+:::{.fragment}
+- Regresemos al ejemplo de la disponibilidad:
+
+|              |DAP A  |DAP B  |
+|--------------|-------|-------|
+|Segmento X    |    30$|    160|
+|Segmento Y    |    40 |    140|
+|Segmento Z    |    60 |    130|
+:::
+
+:::{.fragment}
+Qué estrategia de precios es correcta?
+:::
+
+## Psicología de precios
+
+![](graphs/oferts2.png){.absolute top="200" left="0" width="450" height="500"}
+
+![](graphs/oferts1.png){.absolute top="50" right="50" width="450" height="250"}
+
+## Psicología de precios
+
+:::{.fragment}
+:::{.callout-note}
+## Precio charming
+Es la preferencia de establecer [un dígito menos]{.reder} a la izquierda de la cifra. P.e: $3.00\;\rightarrow \;2.99$ o $13.000\;\rightarrow \;12.990$
+:::
+:::
+
+:::{.fragment}
+:::{.callout-tip}
+## Precio de prestigio
+Es la preferencia de establecer [un digito mas]{.reder} a la izquierda de la cifra. Es lo contrario a la definición anterior P.e: $4.99\;\rightarrow \;4.00$ o $15.990\;\rightarrow \;16.000$
+:::
+:::
+
+## Psicología de precios
+
+:::{.fragment .fade-in}
+:::{.callout-warning}
+## Pague 1 lleve 2
+Preferencia tradicional haciendo ver al consumidor que lleva una ganga. el objetivo de ofrecer la segunda unidad gratis cuando en realidad estan vendiendo un solo producto.
+:::
+:::
+
+:::{.fragment .fade-in}
+:::{.callout-caution}
+## Comparativo 
+Establecen dos productos [similares]{.alert} uno [al lado del otro ]{.bg style="--col: #FFFF00"} pero con precios diferentes. El consumidor al verse enfrente cree que es mejor llevarse la promoción
+:::
+:::
+
+## Psicología de precios
+
+![](graphs/onlyto.png)
+
+## Psicología de precios
+
+:::{.incremental}
+- Hay por comparación de [tamaño]{.blur}
+- Ubicación en estanteria
+- Lado derecho
+- Orden de menor a mayor
+:::
+
+:::{.fragment}
+![](graphs/beeron.png){width=30%}
+:::
+
+
 # Sensibilidad en el precio
 
 ## Sobre el consumo
@@ -934,7 +1006,7 @@ P: Cuál de los siguientes efectos reducen la oferta de naranjas?
 
 > **D**. Un nuevo Jugo de naranja se vuelve viral
 
-> **E**. Una tormenta arraza con los campos de cultivo
+> **E**. Una tormenta arrasa con los campos de cultivo
 
 ## Pregunta 1 {.smaller}
 P: Cuál de los siguientes efectos reducen la oferta de naranjas?
@@ -947,7 +1019,615 @@ P: Cuál de los siguientes efectos reducen la oferta de naranjas?
 
 > **D**. Un nuevo Jugo de naranja se vuelve viral
 
-> [ **E**. Una tormenta arraza con los campos de cultivo]{.alert}
+> [ **E**. Una tormenta arrasa con los campos de cultivo]{.alert}
+
+## Pregunta 2{.smaller}
+
+P: ¿Cómo afecta el multiplicador de Uber la cantidad de viajes ofrecidos?
+
+> **A**. Disminuye la cantidad suministrada al aumentar los precios futuros esperados.
+
+> **B**. Disminuye la cantidad suministrada al aumentar los precios de la gasolina.
+
+> **C**. Disminuye la cantidad suministrada al aumentar el número de conductores de Uber disponibles.
+
+> **D**. Aumenta la cantidad suministrada al aumentar el número de conductores de Uber disponibles.
+
+> **E**. Aumenta la cantidad suministrada al cambiar los gustos de los consumidores.
+
+## Pregunta 2{.smaller}
+
+P: ¿Cómo afecta el multiplicador de Uber la cantidad de viajes ofrecidos?
+
+> **A**. Disminuye la cantidad suministrada al aumentar los precios futuros esperados.
+
+> **B**. Disminuye la cantidad suministrada al aumentar los precios de la gasolina.
+
+> **C**. Disminuye la cantidad suministrada al aumentar el número de conductores de Uber disponibles.
+
+> [**D**. Aumenta la cantidad suministrada al aumentar el número de conductores de Uber disponibles.]{.alert}
+
+> **E**. Aumenta la cantidad suministrada al cambiar los gustos de los consumidores.
+
+## Pregunta 3{.smaller}
+
+P: ¿En qué se diferencia el sistema de precios de Uber de los taxis tradicionales?
+
+> **A**. Los precios de Uber son siempre más altos que los de los taxis tradicionales.
+
+> **B**. Los precios de Uber son siempre más bajos que los de los taxis tradicionales.
+
+> **C**. Los precios de Uber se ajustan inmediatamente a los cambios en la demanda, pero los de los taxis tradicionales no.
+
+> **D**. Los precios de Uber no se ajustan inmediatamente a los cambios en la demanda, pero los de los taxis tradicionales sí.
+
+## Pregunta 3{.smaller}
+
+P: ¿En qué se diferencia el sistema de precios de Uber de los taxis tradicionales?
+
+> **A**. Los precios de Uber son siempre más altos que los de los taxis tradicionales.
+
+> **B**. Los precios de Uber son siempre más bajos que los de los taxis tradicionales.
+
+> [**C**. Los precios de Uber se ajustan inmediatamente a los cambios en la demanda, pero los de los taxis tradicionales no.]{.alert}
+
+> **D**. Los precios de Uber no se ajustan inmediatamente a los cambios en la demanda, pero los de los taxis tradicionales sí.
+
+## Otras consideraciones :grinning:
+
+## Como funciona UBER
+
+::::{.columns}
+::: {.column width=“70%"}
+```{r, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+base
+```
+:::
+
+::: {.column width="30%"}
+**Paso 1:** Aumenta la demanda de viajes (por ejemplo, finaliza un concierto, cierran los bares, se da Año Nuevo, etc.).
+:::
+::::
+
+## Como funciona UBER
+::::{.columns}
+::: {.column width=“70%"}
+```{r, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+x <- 0:10
+demand <- function(x) 10 - x
+demand_2 <- function(x) 12 - x
+supply <- function(x) 1 + x
+
+q_1 <- uniroot(function(x) demand(x) - supply(x), range(x))$root
+p_1 <- demand(q_1)
+
+qd_2 <- demand_2(p_1)
+q_2 <- uniroot(function(x) demand_2(x) - supply(x), range(x))$root
+p_2 <- demand_2(q_2)
+
+shortage <- ggplot(data = data.frame(x = 0), mapping = aes(x = x)) +
+  scale_x_continuous(limits = c(0, 10.5), expand = c(0, 0), breaks = c(q_1), labels = c(expression(Q^"*"))) +
+  scale_y_continuous(limits = c(0, 10.5), expand = c(0, 0), breaks = c(p_1), labels = c(expression(P^"*"))) +
+  theme_market +
+  labs(x = "Q", y = "P") +
+  stat_function(fun = demand, color = red_pink, size = 1, alpha = 0.5) +
+  stat_function(fun = demand_2, color = red_pink, size = 1) +
+  stat_function(fun = supply, color = purple, size = 1) +
+  geom_point(x = q_1, y = p_1, color = met_slate, size = 2) +
+  geom_point(x = qd_2, y = p_1, color = met_slate, size = 2) +
+  # geom_point(x = q_2, y = p_2, color = met_slate, size = 2) +
+  geom_segment(x = 0, xend = qd_2, y = p_1, yend = p_1, color = met_slate, linetype = "dashed", size = 1) +
+  geom_segment(x = q_1, xend = q_1, y = 0, yend = p_1, color = met_slate, linetype = "dashed", size = 1) +
+  geom_segment(x = qd_2, xend = qd_2, y = 0, yend = p_1, color = met_slate, linetype = "dashed", size = 1) +
+  # geom_segment(x = q_2, xend = q_2, y = 0, yend = p_2, color = met_slate, linetype = "dashed", size = 1) +
+  geom_segment(aes(x = 7 + 0.2, y = 3, xend = 9 - 0.2, yend = 3), arrow = arrow(angle = 20, length = unit(0.4,"cm"), type = "closed"), color = met_slate, size = 1) + 
+  annotate("text", label = expression(D[1]), x = 10, y = 0.65, color = red_pink, family = "Fira Sans", size = 9, alpha = 0.5) +
+  annotate("text", label = expression(D[2]), x = 10, y = 2.65, color = red_pink, family = "Fira Sans", size = 9) +
+  annotate("text", label = "S", x = 9.2, y = 9.65, color = purple, family = "Fira Sans", size = 9)
+
+shortage
+```
+:::
+
+::: {.column width="30%"}
+**Paso 1:** Aumenta la demanda de viajes (por ejemplo, finaliza un concierto, cierran los bares, se da Año Nuevo, etc.).
+:::
+::::
+
+## Como funciona UBER
+::::{.columns}
+::: {.column width=“70%"}
+```{r, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+shortage
+```
+:::
+
+::: {.column width="30%"}
+**Paso 2:** Houston!! tenemos problema. Hay escasez [temporal]{.alert}
+:::
+::::
+
+## Como funciona UBER
+::::{.columns}
+::: {.column width=“70%"}
+```{r, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+x <- 0:10
+demand <- function(x) 10 - x
+demand_2 <- function(x) 12 - x
+supply <- function(x) 1 + x
+
+q_1 <- uniroot(function(x) demand(x) - supply(x), range(x))$root
+p_1 <- demand(q_1)
+
+qd_2 <- demand_2(p_1)
+q_2 <- uniroot(function(x) demand_2(x) - supply(x), range(x))$root
+p_2 <- demand_2(q_2)
+
+ggplot(data = data.frame(x = 0), mapping = aes(x = x)) +
+  scale_x_continuous(limits = c(0, 10.5), expand = c(0, 0), breaks = c(q_2), labels = c(expression(Q^"*"))) +
+  scale_y_continuous(limits = c(0, 10.5), expand = c(0, 0), breaks = c(p_2), labels = c(expression(P^"*"))) +
+  theme_market +
+  labs(x = "Q", y = "P") +
+  stat_function(fun = demand, color = red_pink, size = 1, alpha = 0.5) +
+  stat_function(fun = demand_2, color = red_pink, size = 1) +
+  stat_function(fun = supply, color = purple, size = 1) +
+  geom_point(x = q_1, y = p_1, color = met_slate, size = 2, alpha = 0.5) +
+  geom_point(x = qd_2, y = p_1, color = met_slate, size = 2, alpha = 0.5) +
+  geom_point(x = q_2, y = p_2, color = met_slate, size = 2) +
+  geom_segment(x = 0, xend = q_2, y = p_2, yend = p_2, color = met_slate, linetype = "dashed", size = 1) +
+  geom_segment(x = 0, xend = qd_2, y = p_1, yend = p_1, color = met_slate, linetype = "dashed", size = 1, alpha = 0.5) +
+  geom_segment(x = q_1, xend = q_1, y = 0, yend = p_1, color = met_slate, linetype = "dashed", size = 1, alpha = 0.5) +
+  geom_segment(x = qd_2, xend = qd_2, y = 0, yend = p_1, color = met_slate, linetype = "dashed", size = 1, alpha = 0.5) +
+  geom_segment(x = q_2, xend = q_2, y = 0, yend = p_2, color = met_slate, linetype = "dashed", size = 1) +
+  geom_segment(aes(x = 7 + 0.2, y = 3, xend = 9 - 0.2, yend = 3), arrow = arrow(angle = 20, length = unit(0.4,"cm"), type = "closed"), color = met_slate, size = 1) + 
+  annotate("text", label = expression(D[1]), x = 10, y = 0.65, color = red_pink, family = "Fira Sans", size = 9, alpha = 0.5) +
+  annotate("text", label = expression(D[2]), x = 10, y = 2.65, color = red_pink, family = "Fira Sans", size = 9) +
+  annotate("text", label = "S", x = 9.2, y = 9.65, color = purple, family = "Fira Sans", size = 9)
+```
+:::
+
+::: {.column width="30%"}
+**Paso 3:** Uber sube precio hasta [equilibrar]{.blur}
+:::
+::::
+
+# En simultaneo :green_circle:
+
+## Piense en lo siguiente{.smaller}
+
+:::{.fragment}
+P: Supongamos que los conductores y los propietarios de gasolineras esperan que los [precios]{.blur} de la gasolina sean más [altos]{.reder} el próximo mes. ¿Cómo afecta el [aumento]{.blur} esperado del [precio de la gasolina]{.bg style="--col: #e64173"} al precio de equilibrio y a la cantidad de gasolina el día anterior al primer día del nuevo mes?
+:::
+
+:::{.fragment}
+R1: Aumenta la demanda.
+*En igualdad de condiciones, el precio de equilibrio y la cantidad aumentan.*
+:::
+
+:::{.fragment}
+R2: La oferta disminuye.
+*En igualdad de condiciones, el precio de equilibrio aumenta y la cantidad disminuye.*
+:::
+
+:::{.fragment}
+R Final: El precio aumenta sin ambigüedad, pero la cantidad :no_good:
+:::
+
+## Simultaneo 1
+::::{.columns}
+::: {.column width=“70%"}
+```{r, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+x <- 0:10
+demand <- function(x) 10 - x
+demand_2 <- function(x) 12 - x
+supply <- function(x) 1 + x
+
+q_1 <- uniroot(function(x) demand(x) - supply(x), range(x))$root
+p_1 <- demand(q_1)
+
+q_2 <- uniroot(function(x) demand_2(x) - supply(x), range(x))$root
+p_2 <- demand_2(q_2)
+
+base_3 <- ggplot(data = data.frame(x = 0), mapping = aes(x = x)) +
+  scale_x_continuous(limits = c(0, 10.5), expand = c(0, 0), breaks = c(q_1), labels = c(expression(Q^"*"))) +
+  scale_y_continuous(limits = c(0, 10.5), expand = c(0, 0), breaks = c(p_1), labels = c(expression(P^"*"))) +
+  theme_market +
+  labs(x = "Q", y = "P") +
+  stat_function(fun = demand, color = red_pink, size = 1) +
+  stat_function(fun = supply, color = purple, size = 1) +
+  geom_point(x = q_1, y = p_1, color = met_slate, size = 2) +
+  #geom_point(x = q_2, y = p_2, color = met_slate, size = 2) +
+  geom_segment(x = 0, xend = q_1, y = p_1, yend = p_1, color = met_slate, linetype = "dashed", size = 1) +
+  #geom_segment(x = 0, xend = q_2, y = p_2, yend = p_2, color = met_slate, linetype = "dashed", size = 1) +
+  geom_segment(x = q_1, xend = q_1, y = 0, yend = p_1, color = met_slate, linetype = "dashed", size = 1) +
+  #geom_segment(x = q_2, xend = q_2, y = 0, yend = p_2, color = met_slate, linetype = "dashed", size = 1) +
+  annotate("text", label = expression(D[1]), x = 10, y = 0.65, color = red_pink, family = "Fira Sans", size = 9) +
+  annotate("text", label = expression(S[1]), x = 9.4, y = 9.65, color = purple, family = "Fira Sans", size = 9)
+
+base_3
+```
+:::
+
+::: {.column width="30%"}
+- $\uparrow$ P y $\downarrow$ Q 
+- Oferta > Demanda
+:::
+::::
+
+## Simultaneo 1
+::::{.columns}
+::: {.column width=“70%"}
+```{r, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+x <- 0:10
+demand <- function(x) 10 - x
+demand_2 <- function(x) 12 - x
+supply <- function(x) 1 + x
+supply_2 <- function(x) 5 + x
+
+q_1 <- uniroot(function(x) demand(x) - supply(x), range(x))$root
+p_1 <- demand(q_1)
+
+q_2 <- uniroot(function(x) demand_2(x) - supply_2(x), range(x))$root
+p_2 <- demand_2(q_2)
+
+ggplot(data = data.frame(x = 0), mapping = aes(x = x)) +
+  scale_x_continuous(limits = c(0, 10.5), expand = c(0, 0), breaks = c(q_2), labels = c(expression(Q^"*"))) +
+  scale_y_continuous(limits = c(0, 10.5), expand = c(0, 0), breaks = c(p_2), labels = c(expression(P^"*"))) +
+  theme_market +
+  labs(x = "Q", y = "P") +
+  stat_function(fun = demand, color = red_pink, size = 1, alpha = 0.5) +
+  stat_function(fun = demand_2, color = red_pink, size = 1) +
+  stat_function(fun = supply, color = purple, size = 1, alpha = 0.5) +
+  stat_function(fun = supply_2, color = purple, size = 1) +
+  geom_point(x = q_1, y = p_1, color = met_slate, size = 2, alpha = 0.5) +
+  geom_point(x = q_2, y = p_2, color = met_slate, size = 2) +
+  geom_segment(x = 0, xend = q_1, y = p_1, yend = p_1, color = met_slate, linetype = "dashed", size = 1, alpha = 0.5) +
+  geom_segment(x = 0, xend = q_2, y = p_2, yend = p_2, color = met_slate, linetype = "dashed", size = 1) +
+  geom_segment(x = q_1, xend = q_1, y = 0, yend = p_1, color = met_slate, linetype = "dashed", size = 1, alpha = 0.5) +
+  geom_segment(x = q_2, xend = q_2, y = 0, yend = p_2, color = met_slate, linetype = "dashed", size = 1) +
+  annotate("text", label = expression(D[1]), x = 10, y = 0.65, color = red_pink, family = "Fira Sans", size = 9, alpha = 0.5) +
+  annotate("text", label = expression(D[2]), x = 10, y = 2.65, color = red_pink, family = "Fira Sans", size = 9) +
+  annotate("text", label = expression(S[1]), x = 9.4, y = 9.65, color = purple, family = "Fira Sans", size = 9, alpha = 0.5) +
+  annotate("text", label = expression(S[2]), x = 5.4, y = 9.65, color = purple, family = "Fira Sans", size = 9) + geom_segment(aes(x = 6 + 0.2, y = 4, xend = 8 - 0.2, yend = 4), arrow = arrow(angle = 20, length = unit(0.4,"cm"), type = "closed"), color = met_slate, size = 1) + 
+  geom_segment(aes(x = 8 - 0.2, y = 9, xend = 4 + 0.2, yend = 9), arrow = arrow(angle = 20, length = unit(0.4,"cm"), type = "closed"), color = met_slate, size = 1)
+```
+:::
+
+::: {.column width="30%"}
+- $\uparrow$ P y $\downarrow$ Q 
+- Oferta > Demanda
+:::
+::::
+
+## Simultaneo 2
+::::{.columns}
+::: {.column width=“70%"}
+```{r, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+base_3
+```
+:::
+
+::: {.column width="30%"}
+- Oferta < demanda
+- P y Q ambos $\uparrow$
+:::
+::::
+
+## Simultaneo 2
+::::{.columns}
+::: {.column width=“70%"}
+```{r, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+x <- 0:10
+demand <- function(x) 10 - x
+demand_2 <- function(x) 14 - x
+supply <- function(x) 1 + x
+supply_2 <- function(x) 3 + x
+
+q_1 <- uniroot(function(x) demand(x) - supply(x), range(x))$root
+p_1 <- demand(q_1)
+
+q_2 <- uniroot(function(x) demand_2(x) - supply_2(x), range(x))$root
+p_2 <- demand_2(q_2)
+
+ggplot(data = data.frame(x = 0), mapping = aes(x = x)) +
+  scale_x_continuous(limits = c(0, 10.5), expand = c(0, 0), breaks = c(q_2), labels = c(expression(Q^"*"))) +
+  scale_y_continuous(limits = c(0, 10.5), expand = c(0, 0), breaks = c(p_2), labels = c(expression(P^"*"))) +
+  theme_market +
+  labs(x = "Q", y = "P") +
+  stat_function(fun = demand, color = red_pink, size = 1, alpha = 0.5) +
+  stat_function(fun = demand_2, color = red_pink, size = 1) +
+  stat_function(fun = supply, color = purple, size = 1, alpha = 0.5) +
+  stat_function(fun = supply_2, color = purple, size = 1) +
+  geom_point(x = q_1, y = p_1, color = met_slate, size = 2, alpha = 0.5) +
+  geom_point(x = q_2, y = p_2, color = met_slate, size = 2) +
+  geom_segment(x = 0, xend = q_1, y = p_1, yend = p_1, color = met_slate, linetype = "dashed", size = 1, alpha = 0.5) +
+  geom_segment(x = 0, xend = q_2, y = p_2, yend = p_2, color = met_slate, linetype = "dashed", size = 1) +
+  geom_segment(x = q_1, xend = q_1, y = 0, yend = p_1, color = met_slate, linetype = "dashed", size = 1, alpha = 0.5) +
+  geom_segment(x = q_2, xend = q_2, y = 0, yend = p_2, color = met_slate, linetype = "dashed", size = 1) +
+  annotate("text", label = expression(D[1]), x = 10, y = 0.65, color = red_pink, family = "Fira Sans", size = 9, alpha = 0.5) +
+  annotate("text", label = expression(D[2]), x = 10, y = 4.65, color = red_pink, family = "Fira Sans", size = 9) +
+  annotate("text", label = expression(S[1]), x = 9.4, y = 9.65, color = purple, family = "Fira Sans", size = 9, alpha = 0.5) +
+  annotate("text", label = expression(S[2]), x = 7.4, y = 9.65, color = purple, family = "Fira Sans", size = 9) + geom_segment(aes(x = 6 + 0.2, y = 4, xend = 10 - 0.2, yend = 4), arrow = arrow(angle = 20, length = unit(0.4,"cm"), type = "closed"), color = met_slate, size = 1) + 
+  geom_segment(aes(x = 8 - 0.2, y = 9, xend = 6 + 0.2, yend = 9), arrow = arrow(angle = 20, length = unit(0.4,"cm"), type = "closed"), color = met_slate, size = 1)
+```
+
+:::
+
+::: {.column width="30%"}
+- Oferta < demanda
+- P y Q ambos $\uparrow$
+:::
+::::
+
+## Simultaneo 3
+::::{.columns}
+::: {.column width=“70%"}
+```{r, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+base_3
+```
+:::
+
+::: {.column width="30%"}
+- Demanda = Oferta
+- P cambia y Q [NO]{.alert}
+:::
+::::
+
+## Simultaneo 3
+::::{.columns}
+::: {.column width=“70%"}
+```{r, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+x <- 0:10
+demand <- function(x) 10 - x
+demand_2 <- function(x) 12 - x
+supply <- function(x) 1 + x
+supply_2 <- function(x) 3 + x
+
+q_1 <- uniroot(function(x) demand(x) - supply(x), range(x))$root
+p_1 <- demand(q_1)
+
+q_2 <- uniroot(function(x) demand_2(x) - supply_2(x), range(x))$root
+p_2 <- demand_2(q_2)
+
+ggplot(data = data.frame(x = 0), mapping = aes(x = x)) +
+  scale_x_continuous(limits = c(0, 10.5), expand = c(0, 0), breaks = c(q_2), labels = c(expression(Q^"*"))) +
+  scale_y_continuous(limits = c(0, 10.5), expand = c(0, 0), breaks = c(p_2), labels = c(expression(P^"*"))) +
+  theme_market +
+  labs(x = "Q", y = "P") +
+  stat_function(fun = demand, color = red_pink, size = 1, alpha = 0.5) +
+  stat_function(fun = demand_2, color = red_pink, size = 1) +
+  stat_function(fun = supply, color = purple, size = 1, alpha = 0.5) +
+  stat_function(fun = supply_2, color = purple, size = 1) +
+  geom_point(x = q_1, y = p_1, color = met_slate, size = 2, alpha = 0.5) +
+  geom_point(x = q_2, y = p_2, color = met_slate, size = 2) +
+  geom_segment(x = 0, xend = q_1, y = p_1, yend = p_1, color = met_slate, linetype = "dashed", size = 1, alpha = 0.5) +
+  geom_segment(x = 0, xend = q_2, y = p_2, yend = p_2, color = met_slate, linetype = "dashed", size = 1) +
+  geom_segment(x = q_1, xend = q_1, y = 0, yend = p_1, color = met_slate, linetype = "dashed", size = 1, alpha = 0.5) +
+  geom_segment(x = q_2, xend = q_2, y = 0, yend = p_2, color = met_slate, linetype = "dashed", size = 1) +
+  annotate("text", label = expression(D[1]), x = 10, y = 0.65, color = red_pink, family = "Fira Sans", size = 9, alpha = 0.5) +
+  annotate("text", label = expression(D[2]), x = 10, y = 2.65, color = red_pink, family = "Fira Sans", size = 9) +
+  annotate("text", label = expression(S[1]), x = 9.4, y = 9.65, color = purple, family = "Fira Sans", size = 9, alpha = 0.5) +
+  annotate("text", label = expression(S[2]), x = 7.4, y = 9.65, color = purple, family = "Fira Sans", size = 9) + geom_segment(aes(x = 6 + 0.2, y = 4, xend = 8 - 0.2, yend = 4), arrow = arrow(angle = 20, length = unit(0.4,"cm"), type = "closed"), color = met_slate, size = 1) + 
+  geom_segment(aes(x = 8 - 0.2, y = 9, xend = 6 + 0.2, yend = 9), arrow = arrow(angle = 20, length = unit(0.4,"cm"), type = "closed"), color = met_slate, size = 1)
+```
+:::
+
+::: {.column width="30%"}
+- Demanda = Oferta
+- P cambia y Q [NO]{.alert}
+:::
+::::
+
+## Otro ejemplo{.smaller}
+
+:::{.fragment}
+P: Supongamos que un aumento muy publicitado de la contaminación por mercurio [mata]{.alert} al 5% de los [atunes]{.blur} del Pacífico y aviva los temores sobre la exposición al mercurio por comer pescado. [¿Cómo afectan estos cambios al precio de equilibrio y a la cantidad de atún en conserva?]{.reder}
+:::
+
+:::{.fragment}
+R1: Aumento del precio del insumo --> disminución de la oferta.
+*En igualdad de condiciones, el precio de equilibrio aumenta y la cantidad disminuye.*
+:::
+
+:::{.fragment}
+R2: Cambio en los gustos --> la demanda disminuye.
+En igualdad de condiciones, el precio de equilibrio disminuye y la cantidad disminuye.
+:::
+
+:::{.fragment}
+R Final: La cantidad disminuye sin ambigüedad, pero el precio :warning:.
+:::
+
+## Caso 1
+
+::::{.columns}
+::: {.column width=“70%"}
+```{r, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+base_3
+```
+:::
+
+::: {.column width="30%"}
+- P $\uparrow$ y Q fijo
+:::
+::::
+
+## Caso 1
+
+::::{.columns}
+::: {.column width=“70%"}
+```{r, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+x <- 0:10
+demand <- function(x) 10 - x
+demand_2 <- function(x) 8 - x
+supply <- function(x) 1 + x
+supply_2 <- function(x) 5 + x
+
+q_1 <- uniroot(function(x) demand(x) - supply(x), range(x))$root
+p_1 <- demand(q_1)
+
+q_2 <- uniroot(function(x) demand_2(x) - supply_2(x), range(x))$root
+p_2 <- demand_2(q_2)
+
+ggplot(data = data.frame(x = 0), mapping = aes(x = x)) +
+  scale_x_continuous(limits = c(0, 10.5), expand = c(0, 0), breaks = c(q_2), labels = c(expression(Q^"*"))) +
+  scale_y_continuous(limits = c(0, 10.5), expand = c(0, 0), breaks = c(p_2), labels = c(expression(P^"*"))) +
+  theme_market +
+  labs(x = "Q", y = "P") +
+  stat_function(fun = demand, color = red_pink, size = 1, alpha = 0.5) +
+  stat_function(fun = demand_2, color = red_pink, size = 1) +
+  stat_function(fun = supply, color = purple, size = 1, alpha = 0.5) +
+  stat_function(fun = supply_2, color = purple, size = 1) +
+  geom_point(x = q_1, y = p_1, color = met_slate, size = 2, alpha = 0.5) +
+  geom_point(x = q_2, y = p_2, color = met_slate, size = 2) +
+  geom_segment(x = 0, xend = q_1, y = p_1, yend = p_1, color = met_slate, linetype = "dashed", size = 1, alpha = 0.5) +
+  geom_segment(x = 0, xend = q_2, y = p_2, yend = p_2, color = met_slate, linetype = "dashed", size = 1) +
+  geom_segment(x = q_1, xend = q_1, y = 0, yend = p_1, color = met_slate, linetype = "dashed", size = 1, alpha = 0.5) +
+  geom_segment(x = q_2, xend = q_2, y = 0, yend = p_2, color = met_slate, linetype = "dashed", size = 1) +
+  annotate("text", label = expression(D[1]), x = 10, y = 0.65, color = red_pink, family = "Fira Sans", size = 9, alpha = 0.5) +
+  annotate("text", label = expression(D[2]), x = 8, y = 0.65, color = red_pink, family = "Fira Sans", size = 9) +
+  annotate("text", label = expression(S[1]), x = 9.4, y = 9.65, color = purple, family = "Fira Sans", size = 9, alpha = 0.5) +
+  annotate("text", label = expression(S[2]), x = 5.4, y = 9.65, color = purple, family = "Fira Sans", size = 9) + geom_segment(aes(x = 6 - 0.2, y = 4, xend = 4 + 0.2, yend = 4), arrow = arrow(angle = 20, length = unit(0.4,"cm"), type = "closed"), color = met_slate, size = 1) + 
+  geom_segment(aes(x = 8 - 0.2, y = 9, xend = 4 + 0.2, yend = 9), arrow = arrow(angle = 20, length = unit(0.4,"cm"), type = "closed"), color = met_slate, size = 1)
+```
+:::
+
+::: {.column width="30%"}
+- P $\uparrow$ y Q fijo
+- Oferta > Demanda
+:::
+::::
+
+## Caso 2
+
+::::{.columns}
+::: {.column width=“70%"}
+```{r, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+base_3
+```
+:::
+
+::: {.column width="30%"}
+- P $\downarrow$ y Q $\downarrow$
+:::
+::::
+
+## Caso 2
+
+::::{.columns}
+::: {.column width=“70%"}
+```{r, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+x <- 0:10
+demand <- function(x) 10 - x
+demand_2 <- function(x) 6 - x
+supply <- function(x) 1 + x
+supply_2 <- function(x) 3 + x
+
+q_1 <- uniroot(function(x) demand(x) - supply(x), range(x))$root
+p_1 <- demand(q_1)
+
+q_2 <- uniroot(function(x) demand_2(x) - supply_2(x), range(x))$root
+p_2 <- demand_2(q_2)
+
+ggplot(data = data.frame(x = 0), mapping = aes(x = x)) +
+  scale_x_continuous(limits = c(0, 10.5), expand = c(0, 0), breaks = c(q_2), labels = c(expression(Q^"*"))) +
+  scale_y_continuous(limits = c(0, 10.5), expand = c(0, 0), breaks = c(p_2), labels = c(expression(P^"*"))) +
+  theme_market +
+  labs(x = "Q", y = "P") +
+  stat_function(fun = demand, color = red_pink, size = 1, alpha = 0.5) +
+  stat_function(fun = demand_2, color = red_pink, size = 1) +
+  stat_function(fun = supply, color = purple, size = 1, alpha = 0.5) +
+  stat_function(fun = supply_2, color = purple, size = 1) +
+  geom_point(x = q_1, y = p_1, color = met_slate, size = 2, alpha = 0.5) +
+  geom_point(x = q_2, y = p_2, color = met_slate, size = 2) +
+  geom_segment(x = 0, xend = q_1, y = p_1, yend = p_1, color = met_slate, linetype = "dashed", size = 1, alpha = 0.5) +
+  geom_segment(x = 0, xend = q_2, y = p_2, yend = p_2, color = met_slate, linetype = "dashed", size = 1) +
+  geom_segment(x = q_1, xend = q_1, y = 0, yend = p_1, color = met_slate, linetype = "dashed", size = 1, alpha = 0.5) +
+  geom_segment(x = q_2, xend = q_2, y = 0, yend = p_2, color = met_slate, linetype = "dashed", size = 1) +
+  annotate("text", label = expression(D[1]), x = 10, y = 0.65, color = red_pink, family = "Fira Sans", size = 9, alpha = 0.5) +
+  annotate("text", label = expression(D[2]), x = 6, y = 0.65, color = red_pink, family = "Fira Sans", size = 9) +
+  annotate("text", label = expression(S[1]), x = 9.4, y = 9.65, color = purple, family = "Fira Sans", size = 9, alpha = 0.5) +
+  annotate("text", label = expression(S[2]), x = 7.4, y = 9.65, color = purple, family = "Fira Sans", size = 9) + geom_segment(aes(x = 6 - 0.2, y = 4, xend = 2 + 0.2, yend = 4), arrow = arrow(angle = 20, length = unit(0.4,"cm"), type = "closed"), color = met_slate, size = 1) + 
+  geom_segment(aes(x = 8 - 0.2, y = 9, xend = 6 + 0.2, yend = 9), arrow = arrow(angle = 20, length = unit(0.4,"cm"), type = "closed"), color = met_slate, size = 1)
+```
+:::
+
+::: {.column width="30%"}
+- P $\downarrow$ y Q $\downarrow$
+- Demanda > Oferta
+:::
+::::
+
+## Caso 3
+
+::::{.columns}
+::: {.column width=“70%"}
+```{r, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+base_3
+```
+:::
+
+::: {.column width="30%"}
+- P Fijo y Q $\downarrow$
+:::
+::::
+
+## Caso 3
+
+::::{.columns}
+::: {.column width=“70%"}
+```{r, echo = FALSE, fig.height = 5, fig.width = 5, dev = "svg"}
+x <- 0:10
+demand <- function(x) 10 - x
+demand_2 <- function(x) 8 - x
+supply <- function(x) 1 + x
+supply_2 <- function(x) 3 + x
+
+q_1 <- uniroot(function(x) demand(x) - supply(x), range(x))$root
+p_1 <- demand(q_1)
+
+q_2 <- uniroot(function(x) demand_2(x) - supply_2(x), range(x))$root
+p_2 <- demand_2(q_2)
+
+ggplot(data = data.frame(x = 0), mapping = aes(x = x)) +
+  scale_x_continuous(limits = c(0, 10.5), expand = c(0, 0), breaks = c(q_2), labels = c(expression(Q^"*"))) +
+  scale_y_continuous(limits = c(0, 10.5), expand = c(0, 0), breaks = c(p_2), labels = c(expression(P^"*"))) +
+  theme_market +
+  labs(x = "Q", y = "P") +
+  stat_function(fun = demand, color = red_pink, size = 1, alpha = 0.5) +
+  stat_function(fun = demand_2, color = red_pink, size = 1) +
+  stat_function(fun = supply, color = purple, size = 1, alpha = 0.5) +
+  stat_function(fun = supply_2, color = purple, size = 1) +
+  geom_point(x = q_1, y = p_1, color = met_slate, size = 2, alpha = 0.5) +
+  geom_point(x = q_2, y = p_2, color = met_slate, size = 2) +
+  geom_segment(x = 0, xend = q_1, y = p_1, yend = p_1, color = met_slate, linetype = "dashed", size = 1, alpha = 0.5) +
+  geom_segment(x = 0, xend = q_2, y = p_2, yend = p_2, color = met_slate, linetype = "dashed", size = 1) +
+  geom_segment(x = q_1, xend = q_1, y = 0, yend = p_1, color = met_slate, linetype = "dashed", size = 1, alpha = 0.5) +
+  geom_segment(x = q_2, xend = q_2, y = 0, yend = p_2, color = met_slate, linetype = "dashed", size = 1) +
+  annotate("text", label = expression(D[1]), x = 10, y = 0.65, color = red_pink, family = "Fira Sans", size = 9, alpha = 0.5) +
+  annotate("text", label = expression(D[2]), x = 8, y = 0.65, color = red_pink, family = "Fira Sans", size = 9) +
+  annotate("text", label = expression(S[1]), x = 9.4, y = 9.65, color = purple, family = "Fira Sans", size = 9, alpha = 0.5) +
+  annotate("text", label = expression(S[2]), x = 7.4, y = 9.65, color = purple, family = "Fira Sans", size = 9) + geom_segment(aes(x = 6 - 0.2, y = 4, xend = 4 + 0.2, yend = 4), arrow = arrow(angle = 20, length = unit(0.4,"cm"), type = "closed"), color = met_slate, size = 1) + 
+  geom_segment(aes(x = 8 - 0.2, y = 9, xend = 6 + 0.2, yend = 9), arrow = arrow(angle = 20, length = unit(0.4,"cm"), type = "closed"), color = met_slate, size = 1)
+```
+:::
+
+::: {.column width="30%"}
+- P Fijo y Q $\downarrow$
+- Demanda = Oferta
+:::
+::::
+
+## Cambios
+
+:::{.incremental}
+- Los desplazamientos se dan por muchos [factores]{.bg style="--col: #FFFF00"}
+- Los [precios]{.alert} se modifican hasta un punto de regresar al equilibrio (incluso a uno nuevo)
+- Los mercados no son [perfectos]{.alert}, sin embargo interactuan muy bien las fuerzas de oferta y demanda
+:::
+
+# Fin... {background-color="#006dae"}
+
 
 ## {background-color="#006dae"}
 
